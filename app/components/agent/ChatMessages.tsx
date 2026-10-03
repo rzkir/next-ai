@@ -20,7 +20,7 @@ type Props = {
   isEmpty: boolean;
   hero: Hero;
   cards: AgentCategoryCard[];
-  onSelectCard: (prompt: string) => void;
+  onSelectCard: (prompt: string, category?: string) => void;
   formatTime: (iso: string) => string;
 };
 

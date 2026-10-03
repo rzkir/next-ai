@@ -1,22 +1,9 @@
-/* Agent chat theme supplement — Porto editorial tokens not in next-ai app.css */
+/* Agent chat theme supplement */
 
 :root {
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;
   --font-body: var(--font-sans);
-
-  /* Warm accent used by agent bubbles and rails */
-  --accent-warm: oklch(0.52 0.045 48);
-  --accent: var(--accent-warm);
-  --accent-foreground: oklch(0.958 0.007 88);
-  --ring: var(--accent-warm);
-}
-
-.dark {
-  --accent-warm: oklch(0.65 0.04 52);
-  --accent: var(--accent-warm);
-  --accent-foreground: oklch(0.24 0.007 270);
-  --ring: var(--accent-warm);
 }
 
 @keyframes focus-reveal {
@@ -29,6 +16,20 @@
     transform: translateY(0);
   }
 }
+
+@keyframes agent-loading-pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* ── Agent chat ── */
 .agent-shell {
   overflow-x: visible;
@@ -45,7 +46,7 @@
 }
 
 .agent-history-toggle.is-active {
-  color: var(--accent);
+  color: var(--brand);
 }
 
 .agent-panel-rail {
@@ -155,7 +156,7 @@
 }
 
 .agent-scrollbar::-webkit-scrollbar-thumb {
-  background: color-mix(in oklch, var(--accent) 30%, transparent);
+  background: color-mix(in oklch, var(--brand) 30%, transparent);
   border-radius: 10px;
 }
 
@@ -169,7 +170,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    color-mix(in oklch, var(--accent) 20%, transparent),
+    color-mix(in oklch, var(--brand) 20%, transparent),
     transparent
   );
 }
@@ -249,7 +250,7 @@
 
 .agent-history-item:hover {
   border-color: color-mix(in oklch, var(--border) 35%, transparent);
-  background: var(--background);
+  background: var(--surface);
   box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 4%, transparent);
 }
 
@@ -259,7 +260,7 @@
 
 .agent-history-item.is-active {
   border-color: color-mix(in oklch, var(--border) 35%, transparent);
-  background: var(--background);
+  background: var(--surface);
   box-shadow: 0 1px 2px color-mix(in oklch, var(--foreground) 4%, transparent);
 }
 
@@ -271,7 +272,7 @@
   width: 3px;
   height: 1.5rem;
   border-radius: 0 999px 999px 0;
-  background: var(--foreground);
+  background: var(--brand);
   transform: translateY(-50%);
 }
 
@@ -369,15 +370,31 @@
 }
 
 .agent-user-bubble {
-  background: color-mix(in oklch, var(--foreground) 8%, transparent);
-  border: 1px solid var(--border);
+  background: var(--secondary);
 }
 
 .agent-ai-bubble {
-  background: var(--accent);
-  color: var(--accent-foreground);
+  background: transparent;
+  color: var(--foreground);
   max-width: 100%;
   min-width: 0;
+}
+
+.agent-loading-dot {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--muted-foreground);
+  animation: agent-loading-pulse 1.2s ease-in-out infinite;
+}
+
+.agent-loading-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.agent-loading-dot:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 .agent-message-content {
@@ -385,6 +402,7 @@
   overflow-x: auto;
   overflow-wrap: anywhere;
   word-break: break-word;
+  line-height: 1.75;
 }
 
 .agent-message-image {
@@ -454,33 +472,25 @@
 }
 
 .agent-message-content code {
-  border-radius: 0.375rem;
-  background: color-mix(in oklch, currentColor 12%, transparent);
-  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  background: var(--muted);
+  padding: 0.15em 0.4em;
   font-family: var(--font-mono);
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .agent-message-link {
-  color: inherit;
+  color: var(--brand);
   text-decoration: underline;
-  text-decoration-color: color-mix(in oklch, currentColor 45%, transparent);
-  text-underline-offset: 0.18em;
+  text-underline-offset: 3px;
   word-break: break-all;
-  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+  transition:
+    text-decoration-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .agent-message-link:hover {
   text-decoration-color: currentColor;
-}
-
-.chat-modal__bubble--ai .agent-message-link {
-  color: var(--accent);
-  text-decoration-color: color-mix(in oklch, var(--accent) 55%, transparent);
-}
-
-.chat-modal__bubble--ai .agent-message-link:hover {
-  text-decoration-color: var(--accent);
 }
 
 .agent-message-code {
@@ -488,7 +498,8 @@
   max-width: 100%;
   overflow-x: auto;
   border-radius: 0.75rem;
-  background: color-mix(in oklch, currentColor 10%, transparent);
+  background: var(--code);
+  border: 1px solid var(--border);
   padding: 1rem;
   font-family: var(--font-mono);
   font-size: 0.875rem;
@@ -524,8 +535,8 @@
 
 .agent-message-table th,
 .agent-message-table td {
-  border: 1px solid color-mix(in oklch, currentColor 20%, transparent);
-  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding: 0.55em 0.75em;
   text-align: left;
   vertical-align: top;
   min-width: 8rem;
@@ -548,19 +559,6 @@
   position: relative;
   z-index: 10;
   isolation: isolate;
-  background: transparent !important;
-  backdrop-filter: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-}
-
-.agent-prompt-dock::before,
-.agent-prompt-dock::after {
-  content: none !important;
-  background: transparent !important;
-  backdrop-filter: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
 }
 
 .agent-code-editor {
@@ -654,7 +652,7 @@
 .agent-code-editor__tab.is-active {
   color: #ffffff;
   background: #1e1e1e;
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--brand);
 }
 
 .agent-code-editor__tab.is-hidden {

@@ -1,17 +1,7 @@
 import { NavLink, useLocation } from "react-router";
 import {
   Bot,
-  Code2,
-  Search,
-  Megaphone,
-  Wallet,
-  HeartPulse,
-  Lightbulb,
-  GraduationCap,
-  Cpu,
-  FlaskConical,
-  Languages,
-  Scale,
+  Settings,
   Menu,
   X,
 } from "lucide-react";
@@ -27,17 +17,7 @@ export type SidebarItem = {
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   agent: Bot,
-  programming: Code2,
-  seo: Search,
-  marketing: Megaphone,
-  finance: Wallet,
-  health: HeartPulse,
-  trivia: Lightbulb,
-  academia: GraduationCap,
-  technology: Cpu,
-  science: FlaskConical,
-  translation: Languages,
-  legal: Scale,
+  settings: Settings,
 };
 
 type Props = {
@@ -50,7 +30,7 @@ type Props = {
 
 export function AgentSidebar({
   items,
-  homeHref = "/agent",
+  homeHref = "/",
   openNavigationLabel = "Open navigation",
   closeNavigationLabel = "Close navigation",
   agentNavigationLabel = "Agent navigation",
@@ -61,7 +41,9 @@ export function AgentSidebar({
 
   function isActive(href: string) {
     const normalized = href.replace(/\/$/, "") || "/";
-    if (normalized === "/agent") return pathname === "/agent";
+    if (normalized === "/agent") {
+      return pathname === "/agent" || pathname.startsWith("/agent/builds");
+    }
     return pathname === normalized || pathname.startsWith(`${normalized}/`);
   }
 
@@ -69,7 +51,7 @@ export function AgentSidebar({
     <>
       <button
         type="button"
-        className="agent-sidebar-toggle fixed top-3 left-4 z-50 flex size-10 items-center justify-center rounded-xl border border-border bg-background/95 text-foreground shadow-lg backdrop-blur-md transition-colors hover:bg-muted md:hidden"
+        className="agent-sidebar-toggle fixed top-3 left-4 z-50 flex size-9 items-center justify-center rounded-full border border-border bg-background/95 text-muted-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-accent hover:text-foreground md:hidden"
         aria-label={mobileOpen ? closeNavigationLabel : openNavigationLabel}
         aria-expanded={mobileOpen}
         onClick={() => setMobileOpen((v) => !v)}
@@ -90,19 +72,19 @@ export function AgentSidebar({
 
       <aside
         className={cn(
-          "agent-sidebar fixed inset-y-0 left-0 z-50 flex w-20 flex-col overflow-visible border-r border-border bg-background py-8 transition-transform duration-200 ease-out md:static md:translate-x-0 md:shrink-0",
+          "agent-sidebar fixed inset-y-0 left-0 z-50 flex w-16 flex-col overflow-visible border-r border-border bg-sidebar py-6 transition-transform duration-200 ease-out md:static md:translate-x-0 md:shrink-0",
           mobileOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         <div className="relative z-60 flex h-full min-h-0 flex-col items-center overflow-visible md:h-dvh">
           <NavLink
             to={homeHref}
-            className="group mb-8 cursor-pointer"
+            className="group mb-6 cursor-pointer"
             aria-label="Home"
             onClick={() => setMobileOpen(false)}
           >
-            <div className="flex size-12 items-center justify-center rounded-2xl bg-foreground transition-transform group-hover:rotate-12">
-              <span className="text-2xl font-bold text-background">R</span>
+            <div className="flex size-9 items-center justify-center rounded-xl bg-brand text-brand-foreground transition-transform group-hover:scale-105">
+              <span className="text-sm font-bold">R</span>
             </div>
           </NavLink>
 
@@ -110,7 +92,7 @@ export function AgentSidebar({
             className="flex min-h-0 w-full flex-1 overflow-visible"
             aria-label={agentNavigationLabel}
           >
-            <div className="sidebar-nav-scroll flex min-h-0 w-full flex-1 flex-col items-center gap-6 overflow-y-auto overscroll-contain lg:gap-8">
+            <div className="sidebar-nav-scroll flex min-h-0 w-full flex-1 flex-col items-center gap-1 overflow-y-auto overscroll-contain px-2">
               {items.map((item) => {
                 const Icon = ICONS[item.icon] ?? Bot;
                 const active = isActive(item.href);
@@ -123,13 +105,13 @@ export function AgentSidebar({
                     title={item.label}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "inline-flex w-full justify-center transition-colors",
+                      "inline-flex size-10 items-center justify-center rounded-full transition-colors",
                       active
-                        ? "text-foreground"
-                        : "text-muted-foreground hover:text-foreground",
+                        ? "bg-accent text-foreground"
+                        : "text-muted-foreground hover:bg-accent hover:text-foreground",
                     )}
                   >
-                    <Icon className="size-6" />
+                    <Icon className="size-5" />
                   </NavLink>
                 );
               })}

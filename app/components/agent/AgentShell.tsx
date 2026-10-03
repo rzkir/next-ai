@@ -137,7 +137,12 @@ export function AgentShell({
             isEmpty={chat.isEmpty}
             hero={page.hero}
             cards={cards}
-            onSelectCard={(prompt) => chat.applyPromptPreset(prompt)}
+            onSelectCard={(prompt, nextCategory) =>
+              chat.applyPromptPreset(
+                prompt,
+                nextCategory as AgentPromptCategory | undefined,
+              )
+            }
             formatTime={chat.formatTime}
           />
         </div>
@@ -149,7 +154,7 @@ export function AgentShell({
           label={page.promptPlaceholder}
           disabled={chat.loading}
           error={chat.error}
-          category={promptCategory}
+          category={chat.sessionCategory ?? promptCategory}
         />
       </div>
 

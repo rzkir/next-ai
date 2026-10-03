@@ -51,6 +51,8 @@ export function useAgentChat({
   );
   const messagesRef = useRef(messages);
   messagesRef.current = messages;
+  const sessionCategoryRef = useRef(sessionCategory);
+  sessionCategoryRef.current = sessionCategory;
 
   const syncCanvas = useCallback(
     (list: AgentChatMessage[], cat: AgentPromptCategory | null) => {
@@ -106,16 +108,21 @@ export function useAgentChat({
     [storageKey],
   );
 
-  const applyPromptPreset = useCallback((value: string) => {
-    setPrompt(value);
-    setError(null);
-    setSessionCategory(category);
-  }, [category]);
+  const applyPromptPreset = useCallback(
+    (value: string, nextCategory?: AgentPromptCategory) => {
+      setPrompt(value);
+      setError(null);
+      setSessionCategory(nextCategory ?? category);
+    },
+    [category],
+  );
 
   const submit = useCallback(
     async (overrideMessage?: string) => {
       const message = (overrideMessage ?? prompt).trim();
       if (!message || loading) return;
+
+      const activeCategory = sessionCategoryRef.current ?? category;
 
       unlockNotificationAudio();
       setError(null);
@@ -126,20 +133,20 @@ export function useAgentChat({
         role: "user",
         content: message,
         sentAt: new Date().toISOString(),
-        category,
+        category: activeCategory,
       };
 
       const nextMessages = [...messagesRef.current, userMessage];
       setMessages(nextMessages);
       setPrompt("");
       if (draftPath) clearAgentDraft(draftPath);
-      persist(nextMessages, category);
-      setSessionCategory(category);
+      persist(nextMessages, activeCategory);
+      setSessionCategory(activeCategory);
 
       try {
         const response = await sendAgentPrompt({
           message,
-          category,
+          category: activeCategory,
           history: buildPromptHistory(messagesRef.current),
         });
 
@@ -154,15 +161,15 @@ export function useAgentChat({
 
         const withReply = [...nextMessages, assistantMessage];
         setMessages(withReply);
-        persist(withReply, category);
+        persist(withReply, activeCategory);
 
         if (
           enableCanvas &&
-          shouldShowCanvas(message, category, response.reply)
+          shouldShowCanvas(message, activeCategory, response.reply)
         ) {
           setCanvasPreview(buildWebPreview(response.reply));
         } else {
-          syncCanvas(withReply, category);
+          syncCanvas(withReply, activeCategory);
         }
       } catch (err) {
         const messageText =
@@ -178,6 +185,7 @@ export function useAgentChat({
   const clearMessages = useCallback(() => {
     setMessages([]);
     setCanvasPreview(null);
+    setSessionCategory(category);
     persist([], category);
   }, [persist, category]);
 

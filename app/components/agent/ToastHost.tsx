@@ -19,9 +19,9 @@ export function ToastHost() {
         <div
           key={item.id}
           className={cn(
-            "pointer-events-auto rounded-2xl border border-border bg-background/95 px-4 py-3 shadow-lg backdrop-blur",
+            "pointer-events-auto rounded-xl border border-border bg-card px-4 py-3 shadow-[0_8px_30px_-12px_color-mix(in_oklab,var(--foreground)_18%,transparent)]",
             item.variant === "error" && "border-destructive/40",
-            item.variant === "success" && "border-foreground/20",
+            item.variant === "success" && "border-brand/30",
           )}
           role="status"
         >

@@ -90,7 +90,7 @@ export function HistoryPanel({
                   <div className="flex items-center gap-1">
                     <button
                       type="button"
-                      className="inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground hover:text-foreground"
+                      className="inline-flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
                       aria-label={labels.newChat}
                       onClick={onNewChat}
                     >
@@ -98,7 +98,7 @@ export function HistoryPanel({
                     </button>
                     <button
                       type="button"
-                      className="inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground hover:text-foreground"
+                      className="inline-flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
                       aria-label={labels.collapseLabel}
                       onClick={() => onOpenChange(false)}
                     >
@@ -109,7 +109,7 @@ export function HistoryPanel({
               ) : (
                 <button
                   type="button"
-                  className="mx-auto inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground hover:text-foreground"
+                  className="mx-auto inline-flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
                   aria-label={labels.openLabel}
                   onClick={() => onOpenChange(true)}
                 >
@@ -128,7 +128,7 @@ export function HistoryPanel({
                       value={search}
                       onChange={(event) => onSearch(event.target.value)}
                       placeholder={labels.searchPlaceholder}
-                      className="w-full rounded-lg border border-border bg-muted/40 py-2 pr-3 pl-8 text-sm outline-none focus:ring-1 focus:ring-foreground"
+                      className="w-full rounded-full border border-border bg-surface py-2 pr-3 pl-8 text-sm outline-none focus:border-foreground/25"
                     />
                   </div>
                 </div>
@@ -166,8 +166,8 @@ export function HistoryPanel({
                                   className={cn(
                                     "group flex items-start gap-1 rounded-xl px-2 py-2 transition-colors",
                                     active
-                                      ? "bg-muted"
-                                      : "hover:bg-muted/60",
+                                      ? "bg-accent"
+                                      : "hover:bg-accent/60",
                                   )}
                                 >
                                   <button

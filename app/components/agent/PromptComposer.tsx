@@ -12,6 +12,22 @@ type Props = {
   category: string;
 };
 
+const ROLE_LABELS: Record<string, string> = {
+  programming: "Programming",
+  technology: "Technology",
+  seo: "SEO",
+  marketing: "Marketing",
+  customers_services: "Customer Service",
+  science: "Science",
+  translation: "Translation",
+  legal: "Legal",
+  finance: "Finance",
+  health: "Health",
+  trivia: "Trivia",
+  academia: "Academia",
+  roleplay: "General",
+};
+
 export function PromptComposer({
   value,
   onChange,
@@ -35,6 +51,7 @@ export function PromptComposer({
   }, [disabled]);
 
   const canSend = value.trim().length > 0 && !disabled;
+  const roleLabel = ROLE_LABELS[category] ?? category;
 
   return (
     <div className="agent-prompt-dock sticky bottom-0 shrink-0 bg-gradient-to-t from-background via-background to-transparent px-3 pt-2 pb-3 sm:px-6">
@@ -89,7 +106,10 @@ export function PromptComposer({
               }}
               className="block w-full resize-none bg-transparent px-5 pt-4 pb-2 text-[15px] leading-relaxed text-foreground outline-none placeholder:text-muted-foreground disabled:opacity-60"
             />
-            <div className="flex items-center justify-end px-3 pb-3">
+            <div className="flex items-center justify-between gap-2 px-3 pb-3">
+              <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
+                {roleLabel}
+              </span>
               {disabled ? (
                 <button
                   type="button"

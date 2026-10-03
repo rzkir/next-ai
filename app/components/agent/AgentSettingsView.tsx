@@ -88,7 +88,7 @@ export function AgentSettingsView() {
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 overflow-y-auto px-6 py-10 md:px-12">
-      <h1 className="mb-2 text-3xl font-light italic">Agent Settings</h1>
+      <h1 className="mb-2 text-3xl font-semibold tracking-tight">Agent Settings</h1>
       <p className="mb-10 text-muted-foreground">
         Manage preferences, notifications, and personalization for AI Studio.
       </p>
