@@ -1,0 +1,1877 @@
+{
+  "id": {
+    "nav": {
+      "agentStudio": "AI Studio"
+    },
+    "agentBuild": {
+      "previewTitle": "Web Preview",
+      "previewDescription": "Preview halaman web yang dihasilkan dari AI Studio."
+    },
+    "agentStudio": {
+      "sidebar": {
+        "items": {
+          "chat": "Agent",
+          "programming": "Programming",
+          "seo": "SEO",
+          "marketing": "Marketing",
+          "finance": "Finance",
+          "health": "Health",
+          "trivia": "Trivia",
+          "academia": "Academia",
+          "technology": "Technology",
+          "science": "Science",
+          "translation": "Translation",
+          "legal": "Legal"
+        }
+      },
+      "common": {
+        "historyTitle": "Riwayat",
+        "newChat": "Chat Baru",
+        "searchPlaceholder": "Cari percakapan...",
+        "processing": "Memproses",
+        "copy": "Salin",
+        "copied": "Tersalin",
+        "sentAt": "Dikirim {time}",
+        "inferenceComplete": "Inferensi Selesai",
+        "errorGeneric": "Gagal memproses prompt. Coba lagi.",
+        "selectCategoryFirst": "Pilih kategori terlebih dahulu sebelum mengirim prompt.",
+        "active": "Aktif",
+        "newConversation": "Percakapan baru",
+        "noHistory": "Belum ada riwayat",
+        "noHistoryDescription": "Mulai percakapan baru untuk melihat riwayat di sini.",
+        "noSearchResults": "Tidak ada hasil",
+        "noSearchResultsDescription": "Coba kata kunci lain untuk menemukan percakapan.",
+        "noMatchingConversations": "Tidak ada percakapan yang cocok.",
+        "pinConversation": "Pin percakapan",
+        "unpinConversation": "Lepas pin",
+        "deleteConversation": "Hapus percakapan",
+        "openHistory": "Buka riwayat",
+        "closeHistory": "Tutup riwayat",
+        "collapseHistory": "Ciutkan riwayat",
+        "openConversationHistory": "Buka riwayat percakapan",
+        "historyPanelLabel": "Riwayat percakapan",
+        "settings": "Pengaturan",
+        "openNavigation": "Buka navigasi",
+        "closeNavigation": "Tutup navigasi",
+        "home": "Beranda",
+        "backHome": "Kembali ke beranda",
+        "agentNavigation": "Navigasi agent",
+        "userAlt": "Pengguna"
+      },
+      "history": {
+        "periods": {
+          "today": "Hari Ini",
+          "yesterday": "Kemarin",
+          "last7": "Minggu Lalu",
+          "last30": "Bulan Lalu",
+          "older": "Lebih Lama"
+        }
+      },
+      "canvas": {
+        "label": "Canvas",
+        "webPreview": "Pratinjau web",
+        "fullPreview": "Pratinjau penuh",
+        "live": "live",
+        "expand": "Perluas",
+        "refresh": "Muat ulang",
+        "details": "Detail",
+        "previewTab": "Pratinjau",
+        "codeTab": "Kode",
+        "webPreviewTitle": "Pratinjau Web",
+        "codePreviewTitle": "Pratinjau Kode"
+      },
+      "categories": {
+        "studio": {
+          "meta": {
+            "title": "AI Studio",
+            "description": "Mesin presisi untuk eksekusi profesional."
+          },
+          "header": "Deep Intelligence",
+          "hero": {
+            "line1": "Mari ciptakan",
+            "line2": "yang mustahil.",
+            "subtitle": "Mesin presisi untuk eksekusi profesional."
+          },
+          "promptPlaceholder": "Ketik prompt Anda...",
+          "storageKey": "studio",
+          "category": "roleplay",
+          "cards": [
+            {
+              "title": "Academia",
+              "categoryLabel": "Academia",
+              "description": "Dapatkan bantuan riset, literature review, writing akademik, dan strategi belajar yang terstruktur.",
+              "category": "academia",
+              "prompt": "Bantu saya merumuskan topik dan pertanyaan penelitian yang kuat untuk bidang yang saya sebutkan."
+            },
+            {
+              "title": "Finance",
+              "categoryLabel": "Finance",
+              "description": "Susun budget, audit cashflow, rencana investasi, dan strategi pelunasan utang dengan bantuan AI.",
+              "category": "finance",
+              "prompt": "Bantu saya bikin budget bulanan. Saya punya pemasukan Rp..., pengeluaran wajib Rp..., dan target tabungan Rp...; buat alokasi yang masuk akal."
+            },
+            {
+              "title": "Marketing",
+              "categoryLabel": "Marketing",
+              "description": "Ide kampanye digital, konten promosi, dan channel yang tepat untuk menjangkau audiens.",
+              "category": "marketing",
+              "prompt": "Rancang kampanye marketing digital untuk produk saya, lengkap dengan ide konten dan channel promosi."
+            },
+            {
+              "title": "Programming",
+              "categoryLabel": "Programming · Build Web",
+              "description": "Tulis kode, debug error, bangun fitur, dan buat halaman web HTML/CSS/JS dengan preview langsung.",
+              "category": "programming",
+              "prompt": "Bantu saya membangun halaman web. Jelaskan struktur HTML/CSS/JS-nya dan berikan contoh kode lengkapnya."
+            }
+          ]
+        },
+        "programming": {
+          "meta": {
+            "title": "AI Studio · Programming",
+            "description": "Tulis kode, debug error, bangun fitur, dan buat halaman web HTML/CSS/JS dengan preview langsung."
+          },
+          "header": "Programming Engine",
+          "hero": {
+            "line1": "Kirim kode",
+            "line2": "dengan percaya diri.",
+            "subtitle": "Tulis kode, debug error, bangun fitur, dan buat halaman web HTML/CSS/JS dengan preview langsung."
+          },
+          "promptPlaceholder": "Ketik prompt programming Anda...",
+          "storageKey": "programming",
+          "category": "programming",
+          "cards": [
+            {
+              "title": "Build Web Page",
+              "categoryLabel": "Programming · Web",
+              "description": "Bangun halaman web HTML/CSS/JS dengan struktur bersih dan preview langsung.",
+              "category": "programming",
+              "prompt": "Bantu saya membangun halaman web. Jelaskan struktur HTML/CSS/JS-nya dan berikan contoh kode lengkapnya."
+            },
+            {
+              "title": "Debug Code",
+              "categoryLabel": "Programming · Debug",
+              "description": "Temukan dan perbaiki bug pada kode Anda dengan penjelasan langkah demi langkah.",
+              "category": "programming",
+              "prompt": "Bantu saya debug kode berikut. Jelaskan penyebab error dan berikan solusi yang sudah diperbaiki."
+            },
+            {
+              "title": "API Integration",
+              "categoryLabel": "Programming · API",
+              "description": "Integrasikan REST API, handle response, dan implementasi error handling yang solid.",
+              "category": "programming",
+              "prompt": "Bantu saya mengintegrasikan REST API ke aplikasi saya, termasuk fetch data, error handling, dan contoh kode lengkap."
+            },
+            {
+              "title": "Refactor & Optimize",
+              "categoryLabel": "Programming · Refactor",
+              "description": "Perbaiki struktur kode, tingkatkan performa, dan terapkan best practices.",
+              "category": "programming",
+              "prompt": "Review dan refactor kode saya agar lebih bersih, maintainable, dan mengikuti best practices modern."
+            }
+          ]
+        },
+        "seo": {
+          "meta": {
+            "title": "AI Studio · SEO",
+            "description": "Rancang strategi ranking, keyword research, dan optimasi on-page untuk website Anda."
+          },
+          "header": "SEO Engine",
+          "hero": {
+            "line1": "Ranking lebih tinggi",
+            "line2": "secara organik.",
+            "subtitle": "Rancang strategi ranking, keyword research, dan optimasi on-page untuk website Anda."
+          },
+          "promptPlaceholder": "Ketik prompt SEO Anda...",
+          "storageKey": "seo",
+          "category": "seo",
+          "cards": [
+            {
+              "title": "Keyword Research",
+              "categoryLabel": "SEO · Research",
+              "description": "Temukan keyword dengan potensi traffic tinggi dan kompetisi rendah untuk niche Anda.",
+              "category": "seo",
+              "prompt": "Lakukan keyword research untuk website saya. Berikan daftar keyword utama, long-tail, dan search intent masing-masing."
+            },
+            {
+              "title": "On-Page Optimization",
+              "categoryLabel": "SEO · On-Page",
+              "description": "Optimasi meta title, description, heading structure, dan internal linking.",
+              "category": "seo",
+              "prompt": "Audit dan optimasi on-page SEO untuk halaman saya. Berikan rekomendasi meta tags, heading structure, dan internal linking."
+            },
+            {
+              "title": "Content Strategy",
+              "categoryLabel": "SEO · Content",
+              "description": "Rancang kalender konten dan topik artikel yang mendukung ranking organik.",
+              "category": "seo",
+              "prompt": "Buatkan strategi konten SEO 3 bulan untuk website saya, termasuk topik artikel, target keyword, dan struktur pillar-cluster."
+            },
+            {
+              "title": "Technical SEO",
+              "categoryLabel": "SEO · Technical",
+              "description": "Periksa kecepatan, crawlability, schema markup, dan mobile-friendliness.",
+              "category": "seo",
+              "prompt": "Buatkan checklist technical SEO untuk website saya: Core Web Vitals, sitemap, robots.txt, schema markup, dan mobile optimization."
+            }
+          ]
+        },
+        "marketing": {
+          "meta": {
+            "title": "AI Studio · Marketing",
+            "description": "Ide kampanye digital, konten promosi, dan channel yang tepat untuk menjangkau audiens."
+          },
+          "header": "Marketing Engine",
+          "hero": {
+            "line1": "Kembangkan",
+            "line2": "audiens Anda.",
+            "subtitle": "Ide kampanye digital, konten promosi, dan channel yang tepat untuk menjangkau audiens."
+          },
+          "promptPlaceholder": "Ketik prompt marketing Anda...",
+          "storageKey": "marketing",
+          "category": "marketing",
+          "cards": [
+            {
+              "title": "Digital Campaign",
+              "categoryLabel": "Marketing · Campaign",
+              "description": "Rancang kampanye digital end-to-end dengan timeline, budget, dan KPI yang jelas.",
+              "category": "marketing",
+              "prompt": "Rancang kampanye marketing digital untuk produk saya, lengkap dengan timeline, channel promosi, dan KPI yang diukur."
+            },
+            {
+              "title": "Content Promotion",
+              "categoryLabel": "Marketing · Content",
+              "description": "Ide konten promosi yang menarik perhatian dan mendorong konversi audiens.",
+              "category": "marketing",
+              "prompt": "Buatkan ide konten promosi untuk produk saya di berbagai format: copy iklan, carousel, video script, dan email blast."
+            },
+            {
+              "title": "Social Media Strategy",
+              "categoryLabel": "Marketing · Social",
+              "description": "Strategi platform sosial media yang tepat untuk menjangkau target audiens.",
+              "category": "marketing",
+              "prompt": "Susun strategi social media 30 hari untuk brand saya, termasuk pilihan platform, jadwal posting, dan tema konten."
+            },
+            {
+              "title": "Brand Positioning",
+              "categoryLabel": "Marketing · Brand",
+              "description": "Definisikan positioning, value proposition, dan pesan utama brand Anda.",
+              "category": "marketing",
+              "prompt": "Bantu saya membangun brand positioning: value proposition, tone of voice, target persona, dan pesan utama yang konsisten."
+            }
+          ]
+        },
+        "finance": {
+          "meta": {
+            "title": "AI Studio · Finance",
+            "description": "Susun budget, audit cashflow, rencana investasi, dan strategi pelunasan utang dengan bantuan AI."
+          },
+          "header": "Finance Engine",
+          "hero": {
+            "line1": "Buat uang",
+            "line2": "bekerja untuk Anda.",
+            "subtitle": "Susun budget, audit cashflow, rencana investasi, dan strategi pelunasan utang dengan bantuan AI."
+          },
+          "promptPlaceholder": "Ketik prompt finance Anda...",
+          "storageKey": "finance",
+          "category": "finance",
+          "cards": [
+            {
+              "title": "Budget Planner",
+              "categoryLabel": "Finance · Personal",
+              "description": "Susun anggaran bulanan yang realistis, lengkap dengan pos wajib, tabungan, dan spending limit.",
+              "category": "finance",
+              "prompt": "Bantu saya bikin budget bulanan. Saya punya pemasukan Rp..., pengeluaran wajib Rp..., dan target tabungan Rp...; buat alokasi yang masuk akal."
+            },
+            {
+              "title": "Debt Payoff Strategy",
+              "categoryLabel": "Finance · Debt",
+              "description": "Buat strategi pelunasan utang (snowball/avalanche) beserta estimasi waktu dan prioritas cicilan.",
+              "category": "finance",
+              "prompt": "Bantu saya menyusun strategi pelunasan utang. Berikut daftar utang (saldo, bunga, cicilan minimum). Pilihkan metode terbaik dan rencana langkahnya."
+            },
+            {
+              "title": "Investment Plan",
+              "categoryLabel": "Finance · Investing",
+              "description": "Rancang rencana investasi sesuai profil risiko, horizon waktu, dan tujuan finansial.",
+              "category": "finance",
+              "prompt": "Bantu saya membuat rencana investasi. Profil risiko saya..., horizon..., tujuan..., dan kondisi dana darurat...; buat strategi yang prudent."
+            },
+            {
+              "title": "Cashflow Audit",
+              "categoryLabel": "Finance · Audit",
+              "description": "Audit pemasukan-pengeluaran, temukan kebocoran, dan saran optimasi cashflow yang actionable.",
+              "category": "finance",
+              "prompt": "Audit cashflow saya. Berikut pemasukan dan pengeluaran 3 bulan terakhir; temukan kebocoran dan berikan rekomendasi penghematan + prioritas."
+            }
+          ]
+        },
+        "health": {
+          "meta": {
+            "title": "AI Studio · Health",
+            "description": "Atur pola hidup sehat, nutrisi, olahraga, dan pemulihan dengan rekomendasi AI yang praktis."
+          },
+          "header": "Health Engine",
+          "hero": {
+            "line1": "Bangun kebiasaan",
+            "line2": "sehat harian.",
+            "subtitle": "Atur pola hidup sehat, nutrisi, olahraga, dan pemulihan dengan rekomendasi AI yang praktis."
+          },
+          "promptPlaceholder": "Ketik prompt health Anda...",
+          "storageKey": "health",
+          "category": "health",
+          "cards": [
+            {
+              "title": "Healthy Lifestyle Plan",
+              "categoryLabel": "Health · Lifestyle",
+              "description": "Susun rutinitas sehat harian yang realistis: tidur, aktivitas, dan kebiasaan inti.",
+              "category": "health",
+              "prompt": "Bantu saya menyusun rencana gaya hidup sehat harian yang realistis sesuai rutinitas dan kondisi saya."
+            },
+            {
+              "title": "Nutrition Guidance",
+              "categoryLabel": "Health · Nutrition",
+              "description": "Panduan pola makan seimbang sesuai tujuan: maintain, fat loss, atau muscle gain.",
+              "category": "health",
+              "prompt": "Beri saya panduan nutrisi harian yang seimbang berdasarkan tujuan saya, contoh menu, dan porsi sederhananya."
+            },
+            {
+              "title": "Exercise Routine",
+              "categoryLabel": "Health · Fitness",
+              "description": "Program latihan bertahap sesuai level kebugaran dan waktu yang tersedia.",
+              "category": "health",
+              "prompt": "Buatkan rencana olahraga mingguan sesuai level kebugaran saya, durasi latihan, dan target kebugaran."
+            },
+            {
+              "title": "Stress & Recovery",
+              "categoryLabel": "Health · Recovery",
+              "description": "Strategi manajemen stres, kualitas tidur, dan pemulihan agar energi tetap stabil.",
+              "category": "health",
+              "prompt": "Bantu saya mengelola stres dan memperbaiki kualitas tidur dengan langkah yang bisa saya lakukan setiap hari."
+            }
+          ]
+        },
+        "trivia": {
+          "meta": {
+            "title": "AI Studio · Trivia",
+            "description": "Main kuis seru, eksplor fun facts, dan tebak-tebakan pengetahuan umum bersama AI."
+          },
+          "header": "Trivia Engine",
+          "hero": {
+            "line1": "Bermain cerdas",
+            "line2": "pelajari fun facts.",
+            "subtitle": "Main kuis seru, eksplor fun facts, dan tebak-tebakan pengetahuan umum bersama AI."
+          },
+          "promptPlaceholder": "Ketik prompt trivia Anda...",
+          "storageKey": "trivia",
+          "category": "trivia",
+          "cards": [
+            {
+              "title": "Fun Facts",
+              "categoryLabel": "Trivia · Facts",
+              "description": "Temukan fakta unik dan menarik dari berbagai topik, dari sejarah sampai budaya pop.",
+              "category": "trivia",
+              "prompt": "Berikan saya 10 fun facts menarik dari topik yang saya pilih, dengan penjelasan singkat tiap fakta."
+            },
+            {
+              "title": "Quiz Challenge",
+              "categoryLabel": "Trivia · Quiz",
+              "description": "Buat kuis interaktif dengan tingkat kesulitan yang bisa disesuaikan.",
+              "category": "trivia",
+              "prompt": "Buatkan kuis trivia 10 soal dengan pilihan ganda tentang topik yang saya sebutkan, lalu berikan kunci jawaban."
+            },
+            {
+              "title": "Guess The Answer",
+              "categoryLabel": "Trivia · Game",
+              "description": "Main tebak-tebakan trivia dengan format clue bertahap agar lebih seru.",
+              "category": "trivia",
+              "prompt": "Ajak saya bermain tebak-tebakan trivia. Beri clue bertahap dan tunggu jawaban saya sebelum mengungkap jawabannya."
+            },
+            {
+              "title": "Today In History",
+              "categoryLabel": "Trivia · History",
+              "description": "Lihat momen bersejarah penting yang terjadi pada hari ini dari berbagai era.",
+              "category": "trivia",
+              "prompt": "Ceritakan peristiwa penting 'hari ini dalam sejarah' secara ringkas dan menarik, lengkap dengan konteksnya."
+            }
+          ]
+        },
+        "academia": {
+          "meta": {
+            "title": "AI Studio · Academia",
+            "description": "Dapatkan bantuan riset, literature review, writing akademik, dan strategi belajar yang terstruktur."
+          },
+          "header": "Academia Engine",
+          "hero": {
+            "line1": "Berpikir lebih dalam",
+            "line2": "menulis lebih kuat.",
+            "subtitle": "Dapatkan bantuan riset, literature review, writing akademik, dan strategi belajar yang terstruktur."
+          },
+          "promptPlaceholder": "Ketik prompt academia Anda...",
+          "storageKey": "academia",
+          "category": "academia",
+          "cards": [
+            {
+              "title": "Research Assistant",
+              "categoryLabel": "Academia · Research",
+              "description": "Bantu merumuskan topik, pertanyaan riset, dan kerangka studi yang terarah.",
+              "category": "academia",
+              "prompt": "Bantu saya merumuskan topik dan pertanyaan penelitian yang kuat untuk bidang yang saya sebutkan."
+            },
+            {
+              "title": "Literature Review",
+              "categoryLabel": "Academia · Review",
+              "description": "Susun tinjauan pustaka yang rapi: tema utama, gap penelitian, dan arah lanjutan.",
+              "category": "academia",
+              "prompt": "Bantu saya menyusun kerangka literature review untuk topik ini, termasuk tema utama, gap riset, dan kontribusi potensial."
+            },
+            {
+              "title": "Academic Writing",
+              "categoryLabel": "Academia · Writing",
+              "description": "Tingkatkan kualitas tulisan ilmiah: alur argumen, gaya formal, dan struktur paragraf.",
+              "category": "academia",
+              "prompt": "Bantu saya menulis dan memperbaiki bagian tulisan akademik agar lebih jelas, formal, dan koheren."
+            },
+            {
+              "title": "Exam & Study Plan",
+              "categoryLabel": "Academia · Study",
+              "description": "Buat rencana belajar efektif untuk ujian, tugas, dan manajemen waktu akademik.",
+              "category": "academia",
+              "prompt": "Buatkan rencana belajar mingguan untuk persiapan ujian saya, termasuk prioritas materi dan strategi review."
+            }
+          ]
+        },
+        "science": {
+          "meta": {
+            "title": "AI Studio · Science",
+            "description": "Pelajari konsep sains, ringkas riset, dan analisis data dengan pendekatan ilmiah."
+          },
+          "header": "Science Engine",
+          "hero": {
+            "line1": "Jelajahi",
+            "line2": "wawasan ilmiah.",
+            "subtitle": "Pelajari konsep sains, ringkas riset, dan analisis data dengan pendekatan ilmiah."
+          },
+          "promptPlaceholder": "Ketik prompt science Anda...",
+          "storageKey": "science",
+          "category": "science",
+          "cards": [
+            {
+              "title": "Scientific Concepts",
+              "categoryLabel": "Science · Concepts",
+              "description": "Pahami konsep sains kompleks dengan penjelasan yang sederhana dan terstruktur.",
+              "category": "science",
+              "prompt": "Jelaskan konsep sains yang ingin saya pelajari dengan bahasa sederhana, contoh nyata, dan analogi agar mudah dipahami."
+            },
+            {
+              "title": "Research Summary",
+              "categoryLabel": "Science · Research",
+              "description": "Ringkas temuan penelitian, jurnal, dan studi ilmiah menjadi insight praktis.",
+              "category": "science",
+              "prompt": "Ringkas penelitian ilmiah terbaru tentang topik yang saya sebutkan, lalu jelaskan implikasi praktisnya."
+            },
+            {
+              "title": "Experiment Design",
+              "categoryLabel": "Science · Experiment",
+              "description": "Susun rancangan eksperimen yang jelas, terukur, dan mudah direplikasi.",
+              "category": "science",
+              "prompt": "Bantu saya menyusun desain eksperimen untuk hipotesis saya: variabel, metode, alat ukur, dan cara analisis hasil."
+            },
+            {
+              "title": "Data Interpretation",
+              "categoryLabel": "Science · Analysis",
+              "description": "Interpretasi data dan hasil observasi dengan pendekatan ilmiah yang tepat.",
+              "category": "science",
+              "prompt": "Bantu saya menginterpretasi data eksperimen saya dan jelaskan kemungkinan kesimpulan serta keterbatasannya."
+            }
+          ]
+        },
+        "technology": {
+          "meta": {
+            "title": "AI Studio · Technology",
+            "description": "Eksplorasi tren teknologi, perbandingan tools, dan arsitektur sistem untuk proyek Anda."
+          },
+          "header": "Technology Engine",
+          "hero": {
+            "line1": "Tetap di depan",
+            "line2": "kurva teknologi.",
+            "subtitle": "Eksplorasi tren teknologi, perbandingan tools, dan arsitektur sistem untuk proyek Anda."
+          },
+          "promptPlaceholder": "Ketik prompt technology Anda...",
+          "storageKey": "technology",
+          "category": "technology",
+          "cards": [
+            {
+              "title": "Tech Trends",
+              "categoryLabel": "Technology · Trends",
+              "description": "Pahami tren teknologi terkini dan dampaknya terhadap industri Anda.",
+              "category": "technology",
+              "prompt": "Jelaskan tren teknologi terkini yang relevan untuk bisnis saya, beserta peluang dan risiko implementasinya."
+            },
+            {
+              "title": "Tool Comparison",
+              "categoryLabel": "Technology · Tools",
+              "description": "Bandingkan framework, platform, dan tools untuk kebutuhan proyek Anda.",
+              "category": "technology",
+              "prompt": "Bandingkan opsi teknologi untuk use case saya. Berikan pro/kontra, biaya, dan rekomendasi pilihan terbaik."
+            },
+            {
+              "title": "System Architecture",
+              "categoryLabel": "Technology · Architecture",
+              "description": "Rancang arsitektur sistem yang scalable, aman, dan cost-effective.",
+              "category": "technology",
+              "prompt": "Bantu saya merancang arsitektur sistem untuk aplikasi saya, termasuk komponen utama, data flow, dan pertimbangan skalabilitas."
+            },
+            {
+              "title": "Emerging Tech",
+              "categoryLabel": "Technology · Innovation",
+              "description": "Pelajari AI, cloud, edge computing, dan inovasi teknologi lainnya.",
+              "category": "technology",
+              "prompt": "Jelaskan teknologi emerging yang bisa saya adopsi untuk meningkatkan produktivitas dan daya saing bisnis."
+            }
+          ]
+        },
+        "translation": {
+          "meta": {
+            "title": "AI Studio · Translation",
+            "description": "Terjemahkan teks dengan gaya, nada, dan konteks yang tepat."
+          },
+          "header": "Translation Engine",
+          "hero": {
+            "line1": "Terjemahkan",
+            "line2": "dengan maksud.",
+            "subtitle": "Terjemahkan teks dengan gaya, nada, dan konteks yang tepat."
+          },
+          "promptPlaceholder": "Ketik prompt translation Anda...",
+          "storageKey": "translation",
+          "category": "translation",
+          "cards": [
+            {
+              "title": "Translate with Tone",
+              "categoryLabel": "Translation · Tone",
+              "description": "Terjemahkan sambil menjaga gaya bahasa dan nuansa.",
+              "category": "translation",
+              "prompt": "Terjemahkan teks berikut ke Bahasa Indonesia dengan tetap menjaga tone (formal/relaxed) yang saya tentukan. Berikan hasil terjemahan yang natural.\n\nTeks:\n"
+            },
+            {
+              "title": "Translate for Audience",
+              "categoryLabel": "Translation · Audience",
+              "description": "Pilih padanan kata yang cocok untuk audiens tertentu.",
+              "category": "translation",
+              "prompt": "Terjemahkan teks berikut untuk audiens [pelanggan/developer/umum] dengan bahasa yang sesuai tingkatannya. Sertakan versi yang mudah dipahami.\n\nTeks:\n"
+            },
+            {
+              "title": "Proofread & Improve",
+              "categoryLabel": "Translation · Proofread",
+              "description": "Periksa terjemahan dan perbaiki agar lebih akurat dan rapi.",
+              "category": "translation",
+              "prompt": "Berikan terjemahan yang sudah diperbaiki untuk teks berikut. Fokus pada akurasi makna, grammar, dan keterbacaan.\n\nTeks:\n"
+            },
+            {
+              "title": "Translate + Explanation",
+              "categoryLabel": "Translation · Explain",
+              "description": "Terjemahkan dan jelaskan pilihan kata penting.",
+              "category": "translation",
+              "prompt": "Terjemahkan teks berikut ke Bahasa Indonesia, lalu jelaskan 3-5 pilihan kata/ungkapan penting yang paling menentukan nuansa makna.\n\nTeks:\n"
+            }
+          ]
+        },
+        "legal": {
+          "meta": {
+            "title": "AI Studio · Legal",
+            "description": "Bantu drafting dokumen hukum, ringkas klausul, dan analisis risiko secara terstruktur."
+          },
+          "header": "Legal Engine",
+          "hero": {
+            "line1": "Draft dengan",
+            "line2": "kejelasan.",
+            "subtitle": "Bantu drafting dokumen hukum, ringkas klausul, dan analisis risiko secara terstruktur."
+          },
+          "promptPlaceholder": "Ketik prompt legal Anda...",
+          "storageKey": "legal",
+          "category": "legal",
+          "cards": [
+            {
+              "title": "Contract Draft",
+              "categoryLabel": "Legal · Drafting",
+              "description": "Bantu menyusun draft kontrak dengan struktur yang rapi.",
+              "category": "legal",
+              "prompt": "Bantu saya membuat draft kontrak untuk kebutuhan berikut. Susun dalam format profesional, jelas, dan mudah ditinjau.\n\nKebutuhan:\n"
+            },
+            {
+              "title": "Clause Review",
+              "categoryLabel": "Legal · Clause",
+              "description": "Analisis klausul dan identifikasi poin yang berisiko.",
+              "category": "legal",
+              "prompt": "Review klausul berikut dan jelaskan poin ambigu/berisiko, serta usulkan redaksi yang lebih aman.\n\nKlausul:\n"
+            },
+            {
+              "title": "Legal Summary",
+              "categoryLabel": "Legal · Summary",
+              "description": "Ringkas dokumen legal panjang menjadi poin inti.",
+              "category": "legal",
+              "prompt": "Ringkas dokumen legal berikut menjadi poin utama: hak, kewajiban, batasan tanggung jawab, dan risiko.\n\nDokumen:\n"
+            },
+            {
+              "title": "Risk Checklist",
+              "categoryLabel": "Legal · Risk",
+              "description": "Buat checklist risiko hukum untuk validasi awal.",
+              "category": "legal",
+              "prompt": "Buat checklist due diligence legal untuk kasus berikut, termasuk dokumen yang perlu dicek dan red flags.\n\nKasus:\n"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "agentStudio": "AI Studio"
+    },
+    "agentBuild": {
+      "previewTitle": "Web Preview",
+      "previewDescription": "Generated web preview from AI Studio."
+    },
+    "agentStudio": {
+      "sidebar": {
+        "items": {
+          "chat": "Agents",
+          "programming": "Programming",
+          "seo": "SEO",
+          "marketing": "Marketing",
+          "finance": "Finance",
+          "health": "Health",
+          "trivia": "Trivia",
+          "academia": "Academia",
+          "technology": "Technology",
+          "science": "Science",
+          "translation": "Translation",
+          "legal": "Legal"
+        }
+      },
+      "common": {
+        "historyTitle": "History",
+        "newChat": "New Chat",
+        "searchPlaceholder": "Search conversations...",
+        "processing": "Processing",
+        "copy": "Copy",
+        "copied": "Copied",
+        "sentAt": "Sent {time}",
+        "inferenceComplete": "Inference Complete",
+        "errorGeneric": "Failed to process prompt. Try again.",
+        "selectCategoryFirst": "Select a category before sending a prompt.",
+        "active": "Active",
+        "newConversation": "New conversation",
+        "noHistory": "No history yet",
+        "noHistoryDescription": "Start a new conversation to see history here.",
+        "noSearchResults": "No results",
+        "noSearchResultsDescription": "Try another keyword to find conversations.",
+        "noMatchingConversations": "No matching conversations.",
+        "pinConversation": "Pin conversation",
+        "unpinConversation": "Unpin conversation",
+        "deleteConversation": "Delete conversation",
+        "openHistory": "Open history",
+        "closeHistory": "Close history",
+        "collapseHistory": "Collapse history",
+        "openConversationHistory": "Open conversation history",
+        "historyPanelLabel": "Conversation history",
+        "settings": "Settings",
+        "openNavigation": "Open navigation",
+        "closeNavigation": "Close navigation",
+        "home": "Home",
+        "backHome": "Back home",
+        "agentNavigation": "Agent navigation",
+        "userAlt": "User"
+      },
+      "history": {
+        "periods": {
+          "today": "Today",
+          "yesterday": "Yesterday",
+          "last7": "Last week",
+          "last30": "Last month",
+          "older": "Older"
+        }
+      },
+      "canvas": {
+        "label": "Canvas",
+        "webPreview": "Web preview",
+        "fullPreview": "Full preview",
+        "live": "live",
+        "expand": "Expand",
+        "refresh": "Refresh",
+        "details": "Details",
+        "previewTab": "Preview",
+        "codeTab": "Code",
+        "webPreviewTitle": "Web Preview",
+        "codePreviewTitle": "Code Preview"
+      },
+      "categories": {
+        "studio": {
+          "meta": {
+            "title": "AI Studio",
+            "description": "Precision engines for professional execution."
+          },
+          "header": "Deep Intelligence",
+          "hero": {
+            "line1": "Let's create",
+            "line2": "the impossible.",
+            "subtitle": "Precision engines for professional execution."
+          },
+          "promptPlaceholder": "Type your prompt...",
+          "storageKey": "studio",
+          "category": "roleplay",
+          "cards": [
+            {
+              "title": "Academia",
+              "categoryLabel": "Academia",
+              "description": "Get research help, literature reviews, academic writing, and structured study strategies.",
+              "category": "academia",
+              "prompt": "Help me formulate a strong research topic and question for the field I mentioned."
+            },
+            {
+              "title": "Finance",
+              "categoryLabel": "Finance",
+              "description": "Plan budgets, audit cashflow, investment plans, and debt payoff strategies with AI assistance.",
+              "category": "finance",
+              "prompt": "Help me make a monthly budget. I have an income of IDR..., mandatory expenses of IDR..., and a savings target of IDR...; make reasonable allocations."
+            },
+            {
+              "title": "Marketing",
+              "categoryLabel": "Marketing",
+              "description": "Digital campaign ideas, promotional content, and the right channels to reach your audience.",
+              "category": "marketing",
+              "prompt": "Design a digital marketing campaign for my product, complete with content ideas and promotional channels."
+            },
+            {
+              "title": "Programming",
+              "categoryLabel": "Programming · Build Web",
+              "description": "Write code, debug errors, build features, and create HTML/CSS/JS web pages with live preview.",
+              "category": "programming",
+              "prompt": "Help me build a web page. Explain its HTML/CSS/JS structure and provide complete code examples."
+            }
+          ]
+        },
+        "programming": {
+          "meta": {
+            "title": "AI Studio · Programming",
+            "description": "Write code, debug errors, build features, and create HTML/CSS/JS web pages with live preview."
+          },
+          "header": "Programming Engine",
+          "hero": {
+            "line1": "Ship code",
+            "line2": "with confidence.",
+            "subtitle": "Write code, debug errors, build features, and create HTML/CSS/JS web pages with live preview."
+          },
+          "promptPlaceholder": "Type your programming prompt...",
+          "storageKey": "programming",
+          "category": "programming",
+          "cards": [
+            {
+              "title": "Programming",
+              "categoryLabel": "Programming · Build Web",
+              "description": "Write code, debug errors, build features, and create HTML/CSS/JS web pages with live preview.",
+              "category": "programming",
+              "prompt": "Help me build a web page. Explain its HTML/CSS/JS structure and provide complete code examples."
+            },
+            {
+              "title": "Debug Code",
+              "categoryLabel": "Programming · Debug",
+              "description": "Find and fix bugs in your code with step-by-step explanations.",
+              "category": "programming",
+              "prompt": "Help me debug the following code. Explain the cause of the error and provide a corrected solution."
+            },
+            {
+              "title": "API Integration",
+              "categoryLabel": "Programming · API",
+              "description": "Integrate REST API, handle response, and implement solid error handling.",
+              "category": "programming",
+              "prompt": "Help me integrate the REST API into my application, including fetch data, error handling, and complete code examples."
+            },
+            {
+              "title": "Refactor & Optimize",
+              "categoryLabel": "Programming · Refactor",
+              "description": "Improve code structure, improve performance, and implement best practices.",
+              "category": "programming",
+              "prompt": "Review and refactor my code to make it cleaner, maintainable, and follow modern best practices."
+            }
+          ]
+        },
+        "seo": {
+          "meta": {
+            "title": "AI Studio · SEO",
+            "description": "Design ranking strategies, keyword research, and on-page optimization for your website."
+          },
+          "header": "SEO Engine",
+          "hero": {
+            "line1": "Rank higher",
+            "line2": "organically.",
+            "subtitle": "Design ranking strategies, keyword research, and on-page optimization for your website."
+          },
+          "promptPlaceholder": "Type your SEO prompt...",
+          "storageKey": "seo",
+          "category": "seo",
+          "cards": [
+            {
+              "title": "Keyword Research",
+              "categoryLabel": "SEO · Research",
+              "description": "Find keywords with high traffic potential and low competition for your niche.",
+              "category": "seo",
+              "prompt": "Do keyword research for my website. Provide a list of main keywords, long-tail, and search intent for each."
+            },
+            {
+              "title": "On-Page Optimization",
+              "categoryLabel": "SEO · On-Page",
+              "description": "Optimize meta title, description, heading structure and internal linking.",
+              "category": "seo",
+              "prompt": "On-page SEO audit and optimization for my pages. Provide recommendations for meta tags, heading structure, and internal linking."
+            },
+            {
+              "title": "Content Strategy",
+              "categoryLabel": "SEO · Content",
+              "description": "Design a content calendar and article topics that support organic ranking.",
+              "category": "seo",
+              "prompt": "Create a 3-month SEO content strategy for my website, including article topics, target keywords, and pillar-cluster structure."
+            },
+            {
+              "title": "Technical SEO",
+              "categoryLabel": "SEO · Technical",
+              "description": "Check speed, crawlability, schema markup, and mobile-friendliness.",
+              "category": "seo",
+              "prompt": "Create a technical SEO checklist for my website: Core Web Vitals, sitemap, robots.txt, schema markup, and mobile optimization."
+            }
+          ]
+        },
+        "marketing": {
+          "meta": {
+            "title": "AI Studio · Marketing",
+            "description": "Digital campaign ideas, promotional content, and the right channels to reach your audience."
+          },
+          "header": "Marketing Engine",
+          "hero": {
+            "line1": "Grow your",
+            "line2": "audience.",
+            "subtitle": "Digital campaign ideas, promotional content, and the right channels to reach your audience."
+          },
+          "promptPlaceholder": "Type your marketing prompt...",
+          "storageKey": "marketing",
+          "category": "marketing",
+          "cards": [
+            {
+              "title": "Digital Campaign",
+              "categoryLabel": "Marketing · Campaign",
+              "description": "Design end-to-end digital campaigns with a clear timeline, budget and KPIs.",
+              "category": "marketing",
+              "prompt": "Design a digital marketing campaign for my product, complete with timeline, promotional channels, and KPIs to measure."
+            },
+            {
+              "title": "Content Promotion",
+              "categoryLabel": "Marketing · Content",
+              "description": "Promotional content ideas that grab attention and drive audience conversions.",
+              "category": "marketing",
+              "prompt": "Create promotional content ideas for my products in various formats: ad copy, carousel, video script, and email blast."
+            },
+            {
+              "title": "Social Media Strategy",
+              "categoryLabel": "Marketing · Social",
+              "description": "The right social media platform strategy to reach the target audience.",
+              "category": "marketing",
+              "prompt": "Create a 30-day social media strategy for my brand, including platform choices, posting schedule, and content themes."
+            },
+            {
+              "title": "Brand Positioning",
+              "categoryLabel": "Marketing · Brand",
+              "description": "Define your brand's positioning, value proposition and main message.",
+              "category": "marketing",
+              "prompt": "Help me build brand positioning: value proposition, tone of voice, target persona, and consistent key messages."
+            }
+          ]
+        },
+        "finance": {
+          "meta": {
+            "title": "AI Studio · Finance",
+            "description": "Plan budgets, audit cashflow, investment plans, and debt payoff strategies with AI assistance."
+          },
+          "header": "Finance Engine",
+          "hero": {
+            "line1": "Make money",
+            "line2": "work for you.",
+            "subtitle": "Plan budgets, audit cashflow, investment plans, and debt payoff strategies with AI assistance."
+          },
+          "promptPlaceholder": "Type your finance prompt...",
+          "storageKey": "finance",
+          "category": "finance",
+          "cards": [
+            {
+              "title": "Budget Planner",
+              "categoryLabel": "Finance · Personal",
+              "description": "Prepare a realistic monthly budget, complete with mandatory items, savings and spending limits.",
+              "category": "finance",
+              "prompt": "Help me make a monthly budget. I have an income of IDR..., mandatory expenses of IDR..., and a savings target of IDR...; make reasonable allocations."
+            },
+            {
+              "title": "Debt Payoff Strategy",
+              "categoryLabel": "Finance · Debt",
+              "description": "Create a debt repayment strategy (snowball/avalanche) along with estimated installment times and priorities.",
+              "category": "finance",
+              "prompt": "Help me develop a debt repayment strategy. The following is a list of debts (balance, interest, minimum installments). Choose the best method and plan the steps."
+            },
+            {
+              "title": "Investment Plan",
+              "categoryLabel": "Finance · Investing",
+              "description": "Design an investment plan according to your risk profile, time horizon and financial goals.",
+              "category": "finance",
+              "prompt": "Help me make an investment plan. My risk profile..., horizon..., goals..., and emergency fund conditions...; create a prudent strategy."
+            },
+            {
+              "title": "Cashflow Audit",
+              "categoryLabel": "Finance · Audit",
+              "description": "Audit income and expenses, find leaks, and provide actionable cash flow optimization suggestions.",
+              "category": "finance",
+              "prompt": "Audit my cash flow. Following are the income and expenses for the last 3 months; find leaks and provide savings recommendations + priorities."
+            }
+          ]
+        },
+        "health": {
+          "meta": {
+            "title": "AI Studio · Health",
+            "description": "Manage healthy lifestyle, nutrition, exercise, and recovery with practical AI recommendations."
+          },
+          "header": "Health Engine",
+          "hero": {
+            "line1": "Build better",
+            "line2": "daily health habits.",
+            "subtitle": "Manage healthy lifestyle, nutrition, exercise, and recovery with practical AI recommendations."
+          },
+          "promptPlaceholder": "Type your health prompt...",
+          "storageKey": "health",
+          "category": "health",
+          "cards": [
+            {
+              "title": "Healthy Lifestyle Plan",
+              "categoryLabel": "Health · Lifestyle",
+              "description": "Establish a realistic daily healthy routine: sleep, activity, and core habits.",
+              "category": "health",
+              "prompt": "Help me develop a daily healthy lifestyle plan that is realistic according to my routine and conditions."
+            },
+            {
+              "title": "Nutrition Guidance",
+              "categoryLabel": "Health · Nutrition",
+              "description": "Guide to a balanced diet according to the purpose: maintain, fat loss, or muscle gain.",
+              "category": "health",
+              "prompt": "Give me a balanced daily nutritional guide based on my goals, sample menus, and simple portions."
+            },
+            {
+              "title": "Exercise Routine",
+              "categoryLabel": "Health · Fitness",
+              "description": "Gradual training program according to fitness level and time available.",
+              "category": "health",
+              "prompt": "Make a weekly exercise plan according to my fitness level, training duration, and fitness goals."
+            },
+            {
+              "title": "Stress & Recovery",
+              "categoryLabel": "Health · Recovery",
+              "description": "Stress management strategies, quality sleep, and recovery to keep energy stable.",
+              "category": "health",
+              "prompt": "Help me manage stress and improve sleep quality with steps I can take every day."
+            }
+          ]
+        },
+        "trivia": {
+          "meta": {
+            "title": "AI Studio · Trivia",
+            "description": "Play fun quizzes, explore fun facts, and trivia games with AI."
+          },
+          "header": "Trivia Engine",
+          "hero": {
+            "line1": "Play smart",
+            "line2": "learn fun facts.",
+            "subtitle": "Play fun quizzes, explore fun facts, and trivia games with AI."
+          },
+          "promptPlaceholder": "Type your trivia prompt...",
+          "storageKey": "trivia",
+          "category": "trivia",
+          "cards": [
+            {
+              "title": "Fun Facts",
+              "categoryLabel": "Trivia · Facts",
+              "description": "Discover unique and interesting facts on a variety of topics, from history to pop culture.",
+              "category": "trivia",
+              "prompt": "Give me 10 interesting fun facts about the topic I chose, with a brief explanation of each fact."
+            },
+            {
+              "title": "Quiz Challenge",
+              "categoryLabel": "Trivia · Quiz",
+              "description": "Create interactive quizzes with adjustable difficulty levels.",
+              "category": "trivia",
+              "prompt": "Create a 10-question trivia quiz with multiple choices on the topics I mentioned, then provide the answer key."
+            },
+            {
+              "title": "Guess The Answer",
+              "categoryLabel": "Trivia · Game",
+              "description": "Play trivia guessing with a gradual clue format to make it more exciting.",
+              "category": "trivia",
+              "prompt": "Invite me to play trivia guessing game. Give clues step by step and wait for my answer before revealing the answer."
+            },
+            {
+              "title": "Today In History",
+              "categoryLabel": "Trivia · History",
+              "description": "See important historical moments that occurred today from various eras.",
+              "category": "trivia",
+              "prompt": "Tell the important events of 'this day in history' in a concise and engaging way, complete with context."
+            }
+          ]
+        },
+        "academia": {
+          "meta": {
+            "title": "AI Studio · Academia",
+            "description": "Get research help, literature reviews, academic writing, and structured study strategies."
+          },
+          "header": "Academia Engine",
+          "hero": {
+            "line1": "Think deeper",
+            "line2": "write stronger.",
+            "subtitle": "Get research help, literature reviews, academic writing, and structured study strategies."
+          },
+          "promptPlaceholder": "Type your academia prompt...",
+          "storageKey": "academia",
+          "category": "academia",
+          "cards": [
+            {
+              "title": "Research Assistant",
+              "categoryLabel": "Academia · Research",
+              "description": "Help formulate a topic, research question, and purposeful study framework.",
+              "category": "academia",
+              "prompt": "Help me formulate a strong research topic and question for the field I mentioned."
+            },
+            {
+              "title": "Literature Review",
+              "categoryLabel": "Academia · Review",
+              "description": "Organize a neat literature review: main themes, research gaps, and further directions.",
+              "category": "academia",
+              "prompt": "Help me develop a literature review framework for this topic, including major themes, research gaps, and potential contributions."
+            },
+            {
+              "title": "Academic Writing",
+              "categoryLabel": "Academia · Writing",
+              "description": "Improve the quality of scientific writing: flow of argument, formal style, and paragraph structure.",
+              "category": "academia",
+              "prompt": "Help me write and improve sections of academic writing to make them clearer, more formal, and more coherent."
+            },
+            {
+              "title": "Exam & Study Plan",
+              "categoryLabel": "Academia · Study",
+              "description": "Create effective study plans for exams, assignments, and academic time management.",
+              "category": "academia",
+              "prompt": "Create a weekly study plan for my exam preparation, including material priorities and review strategies."
+            }
+          ]
+        },
+        "science": {
+          "meta": {
+            "title": "AI Studio · Science",
+            "description": "Learn scientific concepts, summarize research, and analyze data with a scientific approach."
+          },
+          "header": "Science Engine",
+          "hero": {
+            "line1": "Explore",
+            "line2": "scientific insight.",
+            "subtitle": "Learn scientific concepts, summarize research, and analyze data with a scientific approach."
+          },
+          "promptPlaceholder": "Type your science prompt...",
+          "storageKey": "science",
+          "category": "science",
+          "cards": [
+            {
+              "title": "Scientific Concepts",
+              "categoryLabel": "Science · Concepts",
+              "description": "Understand complex science concepts with simple, structured explanations.",
+              "category": "science",
+              "prompt": "Explain the science concepts that I want to learn in simple language, real examples and analogies so that they are easy to understand."
+            },
+            {
+              "title": "Research Summary",
+              "categoryLabel": "Science · Research",
+              "description": "Summarize research findings, journals and scientific studies into practical insights.",
+              "category": "science",
+              "prompt": "Summarize the latest scientific research on the topics I mention, then explain the practical implications."
+            },
+            {
+              "title": "Experiment Design",
+              "categoryLabel": "Science · Experiment",
+              "description": "Develop an experimental design that is clear, measurable, and easily replicable.",
+              "category": "science",
+              "prompt": "Help me develop an experimental design for my hypothesis: variables, methods, measuring tools, and how to analyze the results."
+            },
+            {
+              "title": "Data Interpretation",
+              "categoryLabel": "Science · Analysis",
+              "description": "Interpretation of data and observation results with an appropriate scientific approach.",
+              "category": "science",
+              "prompt": "Help me interpret my experimental data and explain possible conclusions and limitations."
+            }
+          ]
+        },
+        "technology": {
+          "meta": {
+            "title": "AI Studio · Technology",
+            "description": "Explore technology trends, tool comparisons, and system architecture for your project."
+          },
+          "header": "Technology Engine",
+          "hero": {
+            "line1": "Stay ahead of",
+            "line2": "the curve.",
+            "subtitle": "Explore technology trends, tool comparisons, and system architecture for your project."
+          },
+          "promptPlaceholder": "Type your technology prompt...",
+          "storageKey": "technology",
+          "category": "technology",
+          "cards": [
+            {
+              "title": "Tech Trends",
+              "categoryLabel": "Technology · Trends",
+              "description": "Understand the latest technology trends and their impact on your industry.",
+              "category": "technology",
+              "prompt": "Describe the latest technology trends relevant to my business, along with the opportunities and risks of implementing them."
+            },
+            {
+              "title": "Tool Comparison",
+              "categoryLabel": "Technology · Tools",
+              "description": "Compare frameworks, platforms, and tools for your project needs.",
+              "category": "technology",
+              "prompt": "Compare technology options for my use case. Provide pros/cons, costs, and recommendations for best options."
+            },
+            {
+              "title": "System Architecture",
+              "categoryLabel": "Technology · Architecture",
+              "description": "Design a system architecture that is scalable, secure, and cost-effective.",
+              "category": "technology",
+              "prompt": "Help me design the system architecture for my application, including key components, data flow, and scalability considerations."
+            },
+            {
+              "title": "Emerging Tech",
+              "categoryLabel": "Technology · Innovation",
+              "description": "Learn about AI, cloud, edge computing, and other technology innovations.",
+              "category": "technology",
+              "prompt": "Explain emerging technologies that I can adopt to increase productivity and business competitiveness."
+            }
+          ]
+        },
+        "translation": {
+          "meta": {
+            "title": "AI Studio · Translation",
+            "description": "Translate text with the right style, tone, and context."
+          },
+          "header": "Translation Engine",
+          "hero": {
+            "line1": "Translate",
+            "line2": "with intent.",
+            "subtitle": "Translate text with the right style, tone, and context."
+          },
+          "promptPlaceholder": "Type your translation prompt...",
+          "storageKey": "translation",
+          "category": "translation",
+          "cards": [
+            {
+              "title": "Translate with Tone",
+              "categoryLabel": "Translation · Tone",
+              "description": "Translate while maintaining language style and nuance.",
+              "category": "translation",
+              "prompt": "Translate the following text into Indonesian while maintaining the tone (formal/relaxed) that I specified. Provide natural translation results.\n\nText:"
+            },
+            {
+              "title": "Translate for Audience",
+              "categoryLabel": "Translation · Audience",
+              "description": "Choose word equivalents that are suitable for a particular audience.",
+              "category": "translation",
+              "prompt": "Translate the following text for the audience [customers/developers/general] in language appropriate to their level. Include an easy-to-understand version.\n\nText:"
+            },
+            {
+              "title": "Proofread & Improve",
+              "categoryLabel": "Translation · Proofread",
+              "description": "Check the translation and improve it to make it more accurate and neat.",
+              "category": "translation",
+              "prompt": "Provide a corrected translation for the following text. Focus on accuracy of meaning, grammar, and readability.\n\nText:"
+            },
+            {
+              "title": "Translate + Explanation",
+              "categoryLabel": "Translation · Explain",
+              "description": "Translate and explain important word choices.",
+              "category": "translation",
+              "prompt": "Translate the following text into Indonesian, then explain 3-5 important word/phrase choices that best determine the nuances of meaning.\n\nText:"
+            }
+          ]
+        },
+        "legal": {
+          "meta": {
+            "title": "AI Studio · Legal",
+            "description": "Help draft legal documents, summarize clauses, and analyze risks in a structured way."
+          },
+          "header": "Legal Engine",
+          "hero": {
+            "line1": "Draft with",
+            "line2": "clarity.",
+            "subtitle": "Help draft legal documents, summarize clauses, and analyze risks in a structured way."
+          },
+          "promptPlaceholder": "Type your legal prompt...",
+          "storageKey": "legal",
+          "category": "legal",
+          "cards": [
+            {
+              "title": "Contract Draft",
+              "categoryLabel": "Legal · Drafting",
+              "description": "Help draft contracts with a neat structure.",
+              "category": "legal",
+              "prompt": "Help me draft a contract for the following requirements. Organize it in a professional, clear, and easy-to-review format.\n\nNeed:"
+            },
+            {
+              "title": "Clause Review",
+              "categoryLabel": "Legal · Clause",
+              "description": "Analyze clauses and identify points at risk.",
+              "category": "legal",
+              "prompt": "Review the following clause and explain any ambiguous/risky points, and suggest safer redactions.\n\nClause:"
+            },
+            {
+              "title": "Legal Summary",
+              "categoryLabel": "Legal · Summary",
+              "description": "Condensing long legal documents into core points.",
+              "category": "legal",
+              "prompt": "Summarize the following legal documents into the main points: rights, obligations, limitations of liability, and risks.\n\nDocument:"
+            },
+            {
+              "title": "Risk Checklist",
+              "categoryLabel": "Legal · Risk",
+              "description": "Create a legal risk checklist for initial validation.",
+              "category": "legal",
+              "prompt": "Create a legal due diligence checklist for the following cases, including documents that need to be checked and red flags.\n\nCase:"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ja": {
+    "nav": {
+      "agentStudio": "AI Studio"
+    },
+    "agentBuild": {
+      "previewTitle": "Webプレビュー",
+      "previewDescription": "AI Studio から生成されたWebプレビュー。"
+    },
+    "agentStudio": {
+      "sidebar": {
+        "items": {
+          "chat": "エージェント",
+          "programming": "プログラミング",
+          "seo": "SEO",
+          "marketing": "マーケティング",
+          "finance": "ファイナンス",
+          "health": "ヘルス",
+          "trivia": "トリビア",
+          "academia": "アカデミア",
+          "technology": "テクノロジー",
+          "science": "サイエンス",
+          "translation": "翻訳",
+          "legal": "リーガル"
+        }
+      },
+      "common": {
+        "historyTitle": "履歴",
+        "newChat": "新しいチャット",
+        "searchPlaceholder": "会話を検索...",
+        "processing": "処理中",
+        "copy": "コピー",
+        "copied": "コピー済み",
+        "sentAt": "送信 {time}",
+        "inferenceComplete": "推論完了",
+        "errorGeneric": "プロンプトの処理に失敗しました。もう一度お試しください。",
+        "selectCategoryFirst": "プロンプトを送信する前にカテゴリを選択してください。",
+        "active": "アクティブ",
+        "newConversation": "新しい会話",
+        "noHistory": "履歴はまだありません",
+        "noHistoryDescription": "新しい会話を始めると、ここに履歴が表示されます。",
+        "noSearchResults": "結果がありません",
+        "noSearchResultsDescription": "別のキーワードで会話を検索してみてください。",
+        "noMatchingConversations": "一致する会話がありません。",
+        "pinConversation": "会話をピン留め",
+        "unpinConversation": "ピン留めを解除",
+        "deleteConversation": "会話を削除",
+        "openHistory": "履歴を開く",
+        "closeHistory": "履歴を閉じる",
+        "collapseHistory": "履歴を折りたたむ",
+        "openConversationHistory": "会話履歴を開く",
+        "historyPanelLabel": "会話履歴",
+        "settings": "設定",
+        "openNavigation": "ナビゲーションを開く",
+        "closeNavigation": "ナビゲーションを閉じる",
+        "home": "ホーム",
+        "backHome": "ホームに戻る",
+        "agentNavigation": "エージェントナビゲーション",
+        "userAlt": "ユーザー"
+      },
+      "history": {
+        "periods": {
+          "today": "今日",
+          "yesterday": "昨日",
+          "last7": "先週",
+          "last30": "先月",
+          "older": "それ以前"
+        }
+      },
+      "canvas": {
+        "label": "キャンバス",
+        "webPreview": "Webプレビュー",
+        "fullPreview": "フルプレビュー",
+        "live": "live",
+        "expand": "拡大",
+        "refresh": "更新",
+        "details": "詳細",
+        "previewTab": "プレビュー",
+        "codeTab": "コード",
+        "webPreviewTitle": "Webプレビュー",
+        "codePreviewTitle": "コードプレビュー"
+      },
+      "categories": {
+        "studio": {
+          "meta": {
+            "title": "AI Studio",
+            "description": "プロフェッショナルな実行のための精密エンジン。"
+          },
+          "header": "Deep Intelligence",
+          "hero": {
+            "line1": "不可能を",
+            "line2": "創造しよう。",
+            "subtitle": "プロフェッショナルな実行のための精密エンジン。"
+          },
+          "promptPlaceholder": "プロンプトを入力...",
+          "storageKey": "studio",
+          "category": "roleplay",
+          "cards": [
+            {
+              "title": "アカデミア",
+              "categoryLabel": "Academia",
+              "description": "研究支援、文献レビュー、学術ライティング、構造化された学習戦略。",
+              "category": "academia",
+              "prompt": "私が言及した分野に関する強力な研究テーマと質問を作成するのを手伝ってください。"
+            },
+            {
+              "title": "ファイナンス",
+              "categoryLabel": "Finance",
+              "description": "予算計画、キャッシュフロー監査、投資計画、返済戦略をAIの支援で。",
+              "category": "finance",
+              "prompt": "毎月の予算を立てるのを手伝ってください。私には IDR の収入があり、IDR の義務的支出があり、IDR の貯蓄目標があります。合理的な配分を行う。"
+            },
+            {
+              "title": "マーケティング",
+              "categoryLabel": "Marketing",
+              "description": "デジタルキャンペーンのアイデア、プロモーションコンテンツ、適切なチャネル。",
+              "category": "marketing",
+              "prompt": "コンテンツのアイデアとプロモーション チャネルを備えた、製品のデジタル マーケティング キャンペーンをデザインします。"
+            },
+            {
+              "title": "プログラミング",
+              "categoryLabel": "Programming · Build Web",
+              "description": "コードを記述し、エラーをデバッグし、機能を構築し、ライブ プレビューを使用して HTML/CSS/JS Web ページを作成します。",
+              "category": "programming",
+              "prompt": "ウェブページの作成を手伝ってください。 HTML/CSS/JS 構造を説明し、完全なコード例を提供します。"
+            }
+          ]
+        },
+        "programming": {
+          "meta": {
+            "title": "AI Studio · プログラミング",
+            "description": "コード作成、デバッグ、機能構築、HTML/CSS/JS Webページのライブプレビュー。"
+          },
+          "header": "Programming Engine",
+          "hero": {
+            "line1": "自信を持って",
+            "line2": "コードを書こう。",
+            "subtitle": "コード作成、デバッグ、機能構築、HTML/CSS/JS Webページのライブプレビュー。"
+          },
+          "promptPlaceholder": "プログラミングプロンプトを入力...",
+          "storageKey": "programming",
+          "category": "programming",
+          "cards": [
+            {
+              "title": "プログラミング",
+              "categoryLabel": "Programming · Build Web",
+              "description": "コードを記述し、エラーをデバッグし、機能を構築し、ライブ プレビューを使用して HTML/CSS/JS Web ページを作成します。",
+              "category": "programming",
+              "prompt": "ウェブページの作成を手伝ってください。 HTML/CSS/JS 構造を説明し、完全なコード例を提供します。"
+            },
+            {
+              "title": "デバッグコード",
+              "categoryLabel": "Programming · Debug",
+              "description": "ステップバイステップの説明に従って、コード内のバグを見つけて修正します。",
+              "category": "programming",
+              "prompt": "次のコードのデバッグを手伝ってください。エラーの原因を説明し、修正された解決策を提供します。"
+            },
+            {
+              "title": "APIの統合",
+              "categoryLabel": "Programming · API",
+              "description": "REST API を統合し、応答を処理し、確実なエラー処理を実装します。",
+              "category": "programming",
+              "prompt": "データのフェッチ、エラー処理、完全なコード例など、REST API をアプリケーションに統合するのを手伝ってください。"
+            },
+            {
+              "title": "リファクタリングと最適化",
+              "categoryLabel": "Programming · Refactor",
+              "description": "コード構造を改善し、パフォーマンスを向上させ、ベスト プラクティスを実装します。",
+              "category": "programming",
+              "prompt": "コードをレビューしてリファクタリングして、コードをクリーンにし、保守しやすくし、最新のベスト プラクティスに従ってください。"
+            }
+          ]
+        },
+        "seo": {
+          "meta": {
+            "title": "AI Studio · SEO",
+            "description": "ランキング戦略、キーワード調査、Webサイトのオンページ最適化。"
+          },
+          "header": "SEO Engine",
+          "hero": {
+            "line1": "オーガニックで",
+            "line2": "上位表示を。",
+            "subtitle": "ランキング戦略、キーワード調査、Webサイトのオンページ最適化。"
+          },
+          "promptPlaceholder": "SEOプロンプトを入力...",
+          "storageKey": "seo",
+          "category": "seo",
+          "cards": [
+            {
+              "title": "キーワード調査",
+              "categoryLabel": "SEO · Research",
+              "description": "トラフィックの可能性が高く、ニッチ向けの競合が少ないキーワードを見つけます。",
+              "category": "seo",
+              "prompt": "私のウェブサイトのキーワード調査を行います。主要キーワード、ロングテール、およびそれぞれの検索意図のリストを提供します。"
+            },
+            {
+              "title": "ページ上の最適化",
+              "categoryLabel": "SEO · On-Page",
+              "description": "メタタイトル、説明、見出し構造、内部リンクを最適化します。",
+              "category": "seo",
+              "prompt": "ページ上の SEO 監査とページの最適化。メタタグ、見出し構造、内部リンクに関する推奨事項を提供します。"
+            },
+            {
+              "title": "コンテンツ戦略",
+              "categoryLabel": "SEO · Content",
+              "description": "オーガニックランキングをサポートするコンテンツカレンダーと記事トピックをデザインします。",
+              "category": "seo",
+              "prompt": "記事のトピック、ターゲットキーワード、柱クラスター構造など、Web サイトの 3 か月間の SEO コンテンツ戦略を作成します。"
+            },
+            {
+              "title": "テクニカルSEO",
+              "categoryLabel": "SEO · Technical",
+              "description": "速度、クローラビリティ、スキーマ マークアップ、モバイル フレンドリー性をチェックします。",
+              "category": "seo",
+              "prompt": "Web サイトの技術的な SEO チェックリストを作成します: Core Web Vitals、サイトマップ、robots.txt、スキーマ マークアップ、モバイル最適化。"
+            }
+          ]
+        },
+        "marketing": {
+          "meta": {
+            "title": "AI Studio · マーケティング",
+            "description": "デジタルキャンペーンのアイデア、プロモーションコンテンツ、適切なチャネル。"
+          },
+          "header": "Marketing Engine",
+          "hero": {
+            "line1": "オーディエンスを",
+            "line2": "拡大しよう。",
+            "subtitle": "デジタルキャンペーンのアイデア、プロモーションコンテンツ、適切なチャネル。"
+          },
+          "promptPlaceholder": "マーケティングプロンプトを入力...",
+          "storageKey": "marketing",
+          "category": "marketing",
+          "cards": [
+            {
+              "title": "デジタルキャンペーン",
+              "categoryLabel": "Marketing · Campaign",
+              "description": "明確なタイムライン、予算、KPI を使用して、エンドツーエンドのデジタル キャンペーンを設計します。",
+              "category": "marketing",
+              "prompt": "タイムライン、プロモーション チャネル、測定対象の KPI を備えた、製品のデジタル マーケティング キャンペーンを設計します。"
+            },
+            {
+              "title": "コンテンツのプロモーション",
+              "categoryLabel": "Marketing · Content",
+              "description": "注目を集め、視聴者のコンバージョンを促進するプロモーション コンテンツのアイデア。",
+              "category": "marketing",
+              "prompt": "広告コピー、カルーセル、ビデオスクリプト、メールブラストなど、さまざまな形式で製品のプロモーションコンテンツのアイデアを作成します。"
+            },
+            {
+              "title": "ソーシャルメディア戦略",
+              "categoryLabel": "Marketing · Social",
+              "description": "ターゲット ユーザーにリーチするための適切なソーシャル メディア プラットフォーム戦略。",
+              "category": "marketing",
+              "prompt": "プラットフォームの選択、投稿スケジュール、コンテンツのテーマなど、ブランドの 30 日間のソーシャル メディア戦略を作成します。"
+            },
+            {
+              "title": "ブランドのポジショニング",
+              "categoryLabel": "Marketing · Brand",
+              "description": "ブランドのポジショニング、価値提案、メインメッセージを定義します。",
+              "category": "marketing",
+              "prompt": "ブランドのポジショニング（価値提案、声のトーン、ターゲットとなる人物像、一貫した重要なメッセージ）の構築にご協力ください。"
+            }
+          ]
+        },
+        "finance": {
+          "meta": {
+            "title": "AI Studio · ファイナンス",
+            "description": "予算計画、キャッシュフロー監査、投資計画、返済戦略をAIの支援で。"
+          },
+          "header": "Finance Engine",
+          "hero": {
+            "line1": "お金を",
+            "line2": "働かせよう。",
+            "subtitle": "予算計画、キャッシュフロー監査、投資計画、返済戦略をAIの支援で。"
+          },
+          "promptPlaceholder": "ファイナンスプロンプトを入力...",
+          "storageKey": "finance",
+          "category": "finance",
+          "cards": [
+            {
+              "title": "予算プランナー",
+              "categoryLabel": "Finance · Personal",
+              "description": "必須項目、貯蓄、支出の制限を含めた、現実的な月次予算を作成します。",
+              "category": "finance",
+              "prompt": "毎月の予算を立てるのを手伝ってください。私には IDR の収入があり、IDR の義務的支出があり、IDR の貯蓄目標があります。合理的な配分を行う。"
+            },
+            {
+              "title": "債務返済戦略",
+              "categoryLabel": "Finance · Debt",
+              "description": "推定返済期間と優先順位とともに、借金返済戦略 (雪だるま式/雪崩式) を作成します。",
+              "category": "finance",
+              "prompt": "借金返済戦略の策定を手伝ってください。以下は借金のリスト（残高、利息、最低支払額）です。最適な方法を選択し、手順を計画します。"
+            },
+            {
+              "title": "投資計画",
+              "categoryLabel": "Finance · Investing",
+              "description": "リスクプロファイル、期間、財務目標に応じて投資計画を設計します。",
+              "category": "finance",
+              "prompt": "投資計画を立てるのを手伝ってください。私のリスクプロファイル...、視野...、目標...、緊急資金の状況...;賢明な戦略を立てる。"
+            },
+            {
+              "title": "キャッシュフロー監査",
+              "categoryLabel": "Finance · Audit",
+              "description": "収入と支出を監査し、漏れを発見し、実用的なキャッシュ フロー最適化の提案を提供します。",
+              "category": "finance",
+              "prompt": "私のキャッシュフローを監査してください。過去 3 か月間の収入と支出は次のとおりです。漏れを見つけて、節約に関する推奨事項と優先順位を提供します。"
+            }
+          ]
+        },
+        "health": {
+          "meta": {
+            "title": "AI Studio · ヘルス",
+            "description": "健康的なライフスタイル、栄養、運動、回復を実践的なAI推奨で。"
+          },
+          "header": "Health Engine",
+          "hero": {
+            "line1": "より良い",
+            "line2": "健康習慣を。",
+            "subtitle": "健康的なライフスタイル、栄養、運動、回復を実践的なAI推奨で。"
+          },
+          "promptPlaceholder": "ヘルスプロンプトを入力...",
+          "storageKey": "health",
+          "category": "health",
+          "cards": [
+            {
+              "title": "健康的なライフスタイル計画",
+              "categoryLabel": "Health · Lifestyle",
+              "description": "睡眠、活動、基本的な習慣など、現実的な毎日の健康的なルーチンを確立します。",
+              "category": "health",
+              "prompt": "私の日課や状況に応じて現実的な毎日の健康的なライフスタイル計画を立てるのを手伝ってください。"
+            },
+            {
+              "title": "栄養指導",
+              "categoryLabel": "Health · Nutrition",
+              "description": "維持、脂肪の減少、または筋肉の増加の目的に応じてバランスの取れた食事をガイドします。",
+              "category": "health",
+              "prompt": "私の目標、サンプルメニュー、簡単な分量に基づいたバランスの取れた毎日の栄養ガイドを教えてください。"
+            },
+            {
+              "title": "運動習慣",
+              "categoryLabel": "Health · Fitness",
+              "description": "フィットネスレベルと利用可能な時間に応じた段階的なトレーニングプログラム。",
+              "category": "health",
+              "prompt": "自分のフィットネス レベル、トレーニング期間、フィットネスの目標に応じて、毎週の運動計画を立てます。"
+            },
+            {
+              "title": "ストレスと回復",
+              "categoryLabel": "Health · Recovery",
+              "description": "エネルギーを安定に保つためのストレス管理戦略、質の高い睡眠、回復。",
+              "category": "health",
+              "prompt": "毎日実行できるステップでストレスを管理し、睡眠の質を向上させてください。"
+            }
+          ]
+        },
+        "trivia": {
+          "meta": {
+            "title": "AI Studio · トリビア",
+            "description": "楽しいクイズ、豆知識、トリビアゲームをAIと。"
+          },
+          "header": "Trivia Engine",
+          "hero": {
+            "line1": "賢く遊んで",
+            "line2": "豆知識を学ぼう。",
+            "subtitle": "楽しいクイズ、豆知識、トリビアゲームをAIと。"
+          },
+          "promptPlaceholder": "トリビアプロンプトを入力...",
+          "storageKey": "trivia",
+          "category": "trivia",
+          "cards": [
+            {
+              "title": "面白い事実",
+              "categoryLabel": "Trivia · Facts",
+              "description": "歴史からポップカルチャーまで、さまざまなトピックに関するユニークで興味深い事実を発見してください。",
+              "category": "trivia",
+              "prompt": "私が選んだトピックに関する興味深い事実を 10 個挙げて、それぞれの事実を簡単に説明してください。"
+            },
+            {
+              "title": "クイズチャレンジ",
+              "categoryLabel": "Trivia · Quiz",
+              "description": "難易度を調整できるインタラクティブなクイズを作成します。",
+              "category": "trivia",
+              "prompt": "私が述べたトピックについて複数の選択肢がある 10 問のトリビア クイズを作成し、解答キーを入力してください。"
+            },
+            {
+              "title": "答えを推測してください",
+              "categoryLabel": "Trivia · Game",
+              "description": "段階的な手がかり形式でトリビア推測をプレイすると、よりエキサイティングになります。",
+              "category": "trivia",
+              "prompt": "トリビア当てゲームに誘ってください。ヒントを段階的に与えて、答えを明らかにする前に私の答えを待ちます。"
+            },
+            {
+              "title": "歴史の中の今日",
+              "categoryLabel": "Trivia · History",
+              "description": "さまざまな時代の今日起こった重要な歴史的瞬間をご覧ください。",
+              "category": "trivia",
+              "prompt": "「歴史のこの日」の重要な出来事を、文脈を含めて簡潔かつ魅力的な方法で伝えます。"
+            }
+          ]
+        },
+        "academia": {
+          "meta": {
+            "title": "AI Studio · アカデミア",
+            "description": "研究支援、文献レビュー、学術ライティング、構造化された学習戦略。"
+          },
+          "header": "Academia Engine",
+          "hero": {
+            "line1": "深く考え",
+            "line2": "強く書こう。",
+            "subtitle": "研究支援、文献レビュー、学術ライティング、構造化された学習戦略。"
+          },
+          "promptPlaceholder": "アカデミアプロンプトを入力...",
+          "storageKey": "academia",
+          "category": "academia",
+          "cards": [
+            {
+              "title": "研究助手",
+              "categoryLabel": "Academia · Research",
+              "description": "トピック、研究課題、目的のある学習枠組みを策定するのに役立ちます。",
+              "category": "academia",
+              "prompt": "私が言及した分野に関する強力な研究テーマと質問を作成するのを手伝ってください。"
+            },
+            {
+              "title": "文献レビュー",
+              "categoryLabel": "Academia · Review",
+              "description": "主要なテーマ、研究のギャップ、さらなる方向性など、きちんとした文献レビューを整理します。",
+              "category": "academia",
+              "prompt": "主要なテーマ、研究ギャップ、潜在的な貢献など、このトピックに関する文献レビューの枠組みを作成するのにご協力ください。"
+            },
+            {
+              "title": "アカデミックライティング",
+              "categoryLabel": "Academia · Writing",
+              "description": "議論の流れ、形式的なスタイル、段落構造など、科学論文の質を向上させます。",
+              "category": "academia",
+              "prompt": "学術文書のセクションをより明確で、より形式的で、より一貫性のあるものにするために、執筆および改善にご協力ください。"
+            },
+            {
+              "title": "試験と学習計画",
+              "categoryLabel": "Academia · Study",
+              "description": "試験、課題、学習時間管理のための効果的な学習計画を作成します。",
+              "category": "academia",
+              "prompt": "教材の優先順位や復習戦略など、試験準備のための毎週の学習計画を作成します。"
+            }
+          ]
+        },
+        "science": {
+          "meta": {
+            "title": "AI Studio · サイエンス",
+            "description": "科学的概念の学習、研究の要約、科学的アプローチによるデータ分析。"
+          },
+          "header": "Science Engine",
+          "hero": {
+            "line1": "科学的",
+            "line2": "洞察を探索。",
+            "subtitle": "科学的概念の学習、研究の要約、科学的アプローチによるデータ分析。"
+          },
+          "promptPlaceholder": "サイエンスプロンプトを入力...",
+          "storageKey": "science",
+          "category": "science",
+          "cards": [
+            {
+              "title": "科学的概念",
+              "categoryLabel": "Science · Concepts",
+              "description": "シンプルで構造化された説明で複雑な科学の概念を理解します。",
+              "category": "science",
+              "prompt": "学びたい科学の概念を平易な言葉、実際の例、たとえで理解しやすいように説明します。"
+            },
+            {
+              "title": "研究概要",
+              "categoryLabel": "Science · Research",
+              "description": "研究結果、雑誌、科学的研究を実用的な洞察にまとめます。",
+              "category": "science",
+              "prompt": "私が言及したトピックに関する最新の科学研究を要約し、実際的な意味を説明します。"
+            },
+            {
+              "title": "実験計画",
+              "categoryLabel": "Science · Experiment",
+              "description": "明確で、測定可能で、簡単に再現できる実験計画を作成します。",
+              "category": "science",
+              "prompt": "変数、方法、測定ツール、結果の分析方法など、仮説の実験計画の作成を手伝ってください。"
+            },
+            {
+              "title": "データの解釈",
+              "categoryLabel": "Science · Analysis",
+              "description": "適切な科学的アプローチによるデータと観察結果の解釈。",
+              "category": "science",
+              "prompt": "実験データを解釈し、考えられる結論と限界を説明するのを手伝ってください。"
+            }
+          ]
+        },
+        "technology": {
+          "meta": {
+            "title": "AI Studio · テクノロジー",
+            "description": "テクノロジートレンド、ツール比較、プロジェクトのシステムアーキテクチャ。"
+          },
+          "header": "Technology Engine",
+          "hero": {
+            "line1": "常に",
+            "line2": "一歩先へ。",
+            "subtitle": "テクノロジートレンド、ツール比較、プロジェクトのシステムアーキテクチャ。"
+          },
+          "promptPlaceholder": "テクノロジープロンプトを入力...",
+          "storageKey": "technology",
+          "category": "technology",
+          "cards": [
+            {
+              "title": "技術トレンド",
+              "categoryLabel": "Technology · Trends",
+              "description": "最新のテクノロジートレンドとそれが業界に与える影響を理解します。",
+              "category": "technology",
+              "prompt": "私のビジネスに関連する最新のテクノロジートレンドと、それらを導入する機会とリスクについて説明します。"
+            },
+            {
+              "title": "ツールの比較",
+              "categoryLabel": "Technology · Tools",
+              "description": "プロジェクトのニーズに合わせてフレームワーク、プラットフォーム、ツールを比較します。",
+              "category": "technology",
+              "prompt": "私のユースケースのテクノロジーのオプションを比較してください。長所/短所、コスト、および最適なオプションの推奨事項を提供します。"
+            },
+            {
+              "title": "システムアーキテクチャ",
+              "categoryLabel": "Technology · Architecture",
+              "description": "スケーラブルで安全かつコスト効率の高いシステム アーキテクチャを設計します。",
+              "category": "technology",
+              "prompt": "主要なコンポーネント、データ フロー、スケーラビリティの考慮事項など、アプリケーションのシステム アーキテクチャの設計を支援してください。"
+            },
+            {
+              "title": "新興テクノロジー",
+              "categoryLabel": "Technology · Innovation",
+              "description": "AI、クラウド、エッジ コンピューティング、その他の技術革新について学びます。",
+              "category": "technology",
+              "prompt": "生産性とビジネス競争力を向上させるために導入できる新しいテクノロジーについて説明します。"
+            }
+          ]
+        },
+        "translation": {
+          "meta": {
+            "title": "AI Studio · 翻訳",
+            "description": "適切なスタイル、トーン、コンテキストでテキストを翻訳。"
+          },
+          "header": "Translation Engine",
+          "hero": {
+            "line1": "意図を込めて",
+            "line2": "翻訳しよう。",
+            "subtitle": "適切なスタイル、トーン、コンテキストでテキストを翻訳。"
+          },
+          "promptPlaceholder": "翻訳プロンプトを入力...",
+          "storageKey": "translation",
+          "category": "translation",
+          "cards": [
+            {
+              "title": "口調で翻訳する",
+              "categoryLabel": "Translation · Tone",
+              "description": "言語スタイルやニュアンスを維持しながら翻訳します。",
+              "category": "translation",
+              "prompt": "私が指定したトーン (フォーマル/リラックス) を維持しながら、次のテキストをインドネシア語に翻訳してください。自然な翻訳結果を提供します。\n\n文章："
+            },
+            {
+              "title": "聴衆のために翻訳する",
+              "categoryLabel": "Translation · Audience",
+              "description": "特定の対象者に適した同等の単語を選択してください。",
+              "category": "translation",
+              "prompt": "聴衆 [顧客/開発者/一般] 向けに、次のテキストをレベルに応じた言語で翻訳してください。わかりやすいバージョンも載せておきます。\n\n文章："
+            },
+            {
+              "title": "校正と改善",
+              "categoryLabel": "Translation · Proofread",
+              "description": "翻訳をチェックして、より正確かつきれいになるように修正します。",
+              "category": "translation",
+              "prompt": "次のテキストの修正された翻訳を提供します。意味、文法、読みやすさの正確さに重点を置きます。\n\n文章："
+            },
+            {
+              "title": "翻訳＋解説",
+              "categoryLabel": "Translation · Explain",
+              "description": "重要な単語の選択を翻訳して説明します。",
+              "category": "translation",
+              "prompt": "次の文章をインドネシア語に翻訳し、意味のニュアンスを最もよく決定する 3 ～ 5 つの重要な単語/フレーズの選択肢を説明してください。\n\n文章："
+            }
+          ]
+        },
+        "legal": {
+          "meta": {
+            "title": "AI Studio · リーガル",
+            "description": "法的文書の起草、条項の要約、構造化されたリスク分析の支援。"
+          },
+          "header": "Legal Engine",
+          "hero": {
+            "line1": "明確さを持って",
+            "line2": "起草しよう。",
+            "subtitle": "法的文書の起草、条項の要約、構造化されたリスク分析の支援。"
+          },
+          "promptPlaceholder": "リーガルプロンプトを入力...",
+          "storageKey": "legal",
+          "category": "legal",
+          "cards": [
+            {
+              "title": "契約書草案",
+              "categoryLabel": "Legal · Drafting",
+              "description": "きちんとした構造で契約書を作成するのに役立ちます。",
+              "category": "legal",
+              "prompt": "次の要件に関する契約書の草案を作成するのを手伝ってください。専門的で明確でレビューしやすい形式で整理します。\n\n必要："
+            },
+            {
+              "title": "条項のレビュー",
+              "categoryLabel": "Legal · Clause",
+              "description": "条項を分析し、リスクのある箇所を特定します。",
+              "category": "legal",
+              "prompt": "次の条項を確認し、曖昧な点や危険な点があれば説明し、より安全な編集を提案してください。\n\n句："
+            },
+            {
+              "title": "法的概要",
+              "categoryLabel": "Legal · Summary",
+              "description": "長い法律文書を要点に凝縮。",
+              "category": "legal",
+              "prompt": "次の法的文書を、権利、義務、責任の制限、およびリスクの要点にまとめてください。\n\n書類："
+            },
+            {
+              "title": "リスクチェックリスト",
+              "categoryLabel": "Legal · Risk",
+              "description": "初期検証のために法的リスクのチェックリストを作成します。",
+              "category": "legal",
+              "prompt": "チェックが必要な文書や危険信号など、次のケースに対応する法的デューデリジェンスのチェックリストを作成します。\n\n場合："
+            }
+          ]
+        }
+      }
+    }
+  }
+}
