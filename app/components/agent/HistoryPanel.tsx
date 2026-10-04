@@ -60,8 +60,8 @@ export function HistoryPanel({
       className={cn(
         "agent-history-root z-30 md:relative md:z-auto md:flex md:h-full md:shrink-0 md:flex-col md:overflow-hidden",
         open
-          ? "pointer-events-auto fixed inset-0 md:static"
-          : "pointer-events-none fixed inset-0 md:pointer-events-auto md:static",
+          ? "pointer-events-auto fixed inset-0 md:static md:w-80"
+          : "pointer-events-none fixed inset-0 md:pointer-events-auto md:static md:w-12",
       )}
       aria-hidden={!open}
     >
@@ -75,9 +75,8 @@ export function HistoryPanel({
 
       <aside
         className={cn(
-          "agent-history-panel absolute inset-y-0 left-0 flex w-[min(100%,20rem)] flex-col border-r border-border bg-background transition-transform duration-200 md:static md:w-72",
+          "agent-history-panel absolute inset-y-0 left-0 flex h-full w-[min(100%,20rem)] flex-col border-r border-border bg-background transition-transform duration-200 md:static md:w-full",
           open ? "translate-x-0" : "-translate-x-full md:translate-x-0",
-          !open && "md:w-12",
         )}
         aria-label={labels.panelLabel}
       >
