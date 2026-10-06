@@ -87,7 +87,7 @@ export function AgentShell({
   return (
     <main
       id="agent-main"
-      className="relative flex min-w-0 flex-1 overflow-hidden md:flex-row"
+      className="relative flex min-h-0 min-w-0 flex-1 overflow-hidden md:flex-row"
     >
       <HistoryPanel
         open={historyOpen}

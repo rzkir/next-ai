@@ -58,10 +58,10 @@ export function HistoryPanel({
   return (
     <div
       className={cn(
-        "agent-history-root z-30 md:relative md:z-auto md:flex md:h-full md:shrink-0 md:flex-col md:overflow-hidden",
+        "agent-history-root z-30 fixed inset-0 md:sticky md:inset-auto md:top-0 md:z-auto md:flex md:h-dvh md:shrink-0 md:flex-col md:self-start md:overflow-hidden",
         open
-          ? "pointer-events-auto fixed inset-0 md:static md:w-80"
-          : "pointer-events-none fixed inset-0 md:pointer-events-auto md:static md:w-12",
+          ? "pointer-events-auto md:w-80"
+          : "pointer-events-none md:pointer-events-auto md:w-12",
       )}
       aria-hidden={!open}
     >

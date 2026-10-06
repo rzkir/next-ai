@@ -25,6 +25,7 @@ export interface AgentPromptRequest {
   category: AgentPromptCategory;
   user_id?: string;
   history?: AgentHistoryItem[];
+  model?: string;
 }
 
 export interface AgentPromptResponse {

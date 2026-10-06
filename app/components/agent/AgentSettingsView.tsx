@@ -1,11 +1,16 @@
 import { useAgentSettings } from "~/hooks/useAgentSettings";
 import {
+  AGENT_MODELS,
   NOTIFICATION_SOUNDS,
   playNotificationSound,
   requestDesktopNotificationPermission,
   unlockNotificationAudio,
 } from "~/lib/agent/settings";
-import type { AgentSettingsKey, NotificationSoundId } from "~/types/settings";
+import type {
+  AgentModelId,
+  AgentSettingsKey,
+  NotificationSoundId,
+} from "~/types/settings";
 import { toast } from "~/lib/notifications";
 import { cn } from "~/lib/utils";
 
@@ -86,12 +91,51 @@ export function AgentSettingsView() {
     if (soundId !== "off") playNotificationSound(soundId);
   }
 
+  function handleModel(modelId: AgentModelId) {
+    update("selectedModel", modelId);
+    const model = AGENT_MODELS.find((item) => item.id === modelId);
+    toast.success("Model updated", model ? `${model.label} selected` : undefined);
+  }
+
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 overflow-y-auto px-6 py-10 md:px-12">
       <h1 className="mb-2 text-3xl font-semibold tracking-tight">Agent Settings</h1>
       <p className="mb-10 text-muted-foreground">
         Manage preferences, notifications, and personalization for AI Studio.
       </p>
+
+      <section className="mb-10 space-y-4">
+        <div>
+          <h2 className="text-xl font-medium">Model</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Pilih model yang dipakai untuk percakapan berikutnya.
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {AGENT_MODELS.map((model) => {
+            const selected = settings.selectedModel === model.id;
+            return (
+              <button
+                key={model.id}
+                type="button"
+                aria-pressed={selected}
+                className={cn(
+                  "rounded-2xl border px-4 py-4 text-left transition-colors",
+                  selected
+                    ? "border-foreground bg-muted"
+                    : "border-border hover:bg-muted/50",
+                )}
+                onClick={() => handleModel(model.id)}
+              >
+                <span className="block text-sm font-medium">{model.label}</span>
+                <span className="mt-1 block text-xs text-muted-foreground">
+                  {model.description}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
 
       <section className="mb-10 space-y-4">
         <h2 className="text-xl font-medium">Preferences</h2>

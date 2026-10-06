@@ -22,7 +22,7 @@ export default function AgentLayout() {
   const data = useLoaderData<typeof loader>();
 
   return (
-    <div className="agent-shell flex min-h-dvh w-full overflow-hidden bg-background text-foreground">
+    <div className="agent-shell flex h-dvh w-full overflow-hidden bg-background text-foreground">
       <AgentSidebar
         items={data.items}
         openNavigationLabel={data.labels.openNavigation}

@@ -72,11 +72,11 @@ export function AgentSidebar({
 
       <aside
         className={cn(
-          "agent-sidebar fixed inset-y-0 left-0 z-50 flex w-16 flex-col overflow-visible border-r border-border bg-sidebar py-6 transition-transform duration-200 ease-out md:static md:translate-x-0 md:shrink-0",
+          "agent-sidebar fixed inset-y-0 left-0 z-50 flex w-16 flex-col overflow-visible border-r border-border bg-sidebar py-6 transition-transform duration-200 ease-out md:sticky md:top-0 md:h-dvh md:translate-x-0 md:shrink-0 md:self-start",
           mobileOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
-        <div className="relative z-60 flex h-full min-h-0 flex-col items-center overflow-visible md:h-dvh">
+        <div className="relative z-60 flex h-full min-h-0 flex-col items-center overflow-visible">
           <NavLink
             to={homeHref}
             className="group mb-6 cursor-pointer"

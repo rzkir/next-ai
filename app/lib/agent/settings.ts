@@ -1,4 +1,6 @@
 import type {
+  AgentModelId,
+  AgentModelOption,
   AgentSettings,
   AgentSettingsKey,
   NotificationSoundId,
@@ -20,7 +22,26 @@ export const DEFAULT_AGENT_SETTINGS: AgentSettings = {
   conciseResponses: false,
   rememberContext: true,
   notificationSound: "iphone",
+  selectedModel: "balanced",
 };
+
+export const AGENT_MODELS: AgentModelOption[] = [
+  {
+    id: "fast",
+    label: "Fast",
+    description: "Respons cepat untuk pertanyaan sehari-hari.",
+  },
+  {
+    id: "balanced",
+    label: "Balanced",
+    description: "Keseimbangan terbaik antara kecepatan dan kualitas.",
+  },
+  {
+    id: "reasoning",
+    label: "Reasoning",
+    description: "Pemikiran lebih dalam untuk masalah kompleks.",
+  },
+];
 
 export const NOTIFICATION_SOUNDS: NotificationSoundOption[] = [
   {
@@ -56,6 +77,10 @@ function isNotificationSoundId(value: unknown): value is NotificationSoundId {
   return value === "computer" || value === "iphone" || value === "off";
 }
 
+function isAgentModelId(value: unknown): value is AgentModelId {
+  return value === "fast" || value === "balanced" || value === "reasoning";
+}
+
 function normalizeSettings(value: unknown): AgentSettings {
   const source =
     value && typeof value === "object" ? (value as Partial<AgentSettings>) : {};
@@ -85,7 +110,18 @@ function normalizeSettings(value: unknown): AgentSettings {
     notificationSound: isNotificationSoundId(source.notificationSound)
       ? source.notificationSound
       : DEFAULT_AGENT_SETTINGS.notificationSound,
+    selectedModel: isAgentModelId(source.selectedModel)
+      ? source.selectedModel
+      : DEFAULT_AGENT_SETTINGS.selectedModel,
   };
+}
+
+export function getAgentModelOption(
+  modelId: AgentModelId = getAgentSettings().selectedModel,
+): AgentModelOption {
+  return (
+    AGENT_MODELS.find((model) => model.id === modelId) ?? AGENT_MODELS[1]
+  );
 }
 
 export function getAgentSettings(): AgentSettings {
@@ -294,4 +330,4 @@ export function clearAgentDraft(path: string): void {
   window.localStorage.removeItem(`${DRAFT_STORAGE_PREFIX}${path}`);
 }
 
-export { isNotificationSoundId };
+export { isNotificationSoundId, isAgentModelId };

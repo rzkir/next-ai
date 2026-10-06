@@ -8,6 +8,10 @@ import {
 
 export default [
   index("routes/home.tsx"),
+  route(
+    ".well-known/appspecific/com.chrome.devtools.json",
+    "routes/well-known.chrome-devtools.ts",
+  ),
   route("api/agent/prompt", "routes/api.agent.prompt.ts"),
   ...prefix("agent", [
     layout("routes/agent-layout.tsx", [

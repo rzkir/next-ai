@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { ArrowUp, Square } from "lucide-react";
 import { cn } from "~/lib/utils";
+import { getAgentModelOption } from "~/lib/agent/settings";
+import { useAgentSettings } from "~/hooks/useAgentSettings";
 
 type Props = {
   value: string;
@@ -38,6 +40,8 @@ export function PromptComposer({
   category,
 }: Props) {
   const ta = useRef<HTMLTextAreaElement>(null);
+  const { settings } = useAgentSettings();
+  const modelLabel = getAgentModelOption(settings.selectedModel).label;
 
   useEffect(() => {
     const el = ta.current;
@@ -107,9 +111,14 @@ export function PromptComposer({
               className="block w-full resize-none bg-transparent px-5 pt-4 pb-2 text-[15px] leading-relaxed text-foreground outline-none placeholder:text-muted-foreground disabled:opacity-60"
             />
             <div className="flex items-center justify-between gap-2 px-3 pb-3">
-              <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
-                {roleLabel}
-              </span>
+              <div className="flex items-center gap-1.5">
+                <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
+                  {roleLabel}
+                </span>
+                <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
+                  {modelLabel}
+                </span>
+              </div>
               {disabled ? (
                 <button
                   type="button"

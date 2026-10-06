@@ -10,6 +10,7 @@ import type {
 } from "~/types/agent";
 import { createAgentPromptClient } from "~/lib/agent/fetch-prompt";
 import {
+  getAgentSettings,
   notifyAgentResponseComplete,
   prepareAgentMessage,
   resolveAgentHistory,
@@ -756,6 +757,7 @@ export async function sendAgentPrompt(input: {
   history?: AgentHistoryItem[];
   category: AgentPromptCategory;
   userId?: string;
+  model?: string;
 }): Promise<AgentPromptResponse> {
   // Unlock during the submit gesture so the completion sound can play later.
   unlockNotificationAudio();
@@ -764,6 +766,7 @@ export async function sendAgentPrompt(input: {
     message: prepareAgentMessage(input.message),
     category: input.category,
     history: resolveAgentHistory(input.history),
+    model: input.model ?? getAgentSettings().selectedModel,
   };
 
   if (input.userId) {
